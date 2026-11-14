@@ -14,3 +14,4 @@ indic-transliteration>=2.3
 # Real singing (free): Kaggle API to run ACE-Step on Kaggle's free GPU, Whisper to check the words
 kaggle>=1.6
 faster-whisper>=1.0
+six
