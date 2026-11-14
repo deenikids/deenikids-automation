@@ -11,7 +11,7 @@ from plan_data import *  # noqa
 START = dt.date(2027, 1, 4)
 DAYS = 1000
 BRAND = "Deeni & Friends"
-VERIFY = " [VERIFY]"
+VERIFY = " [CHECKED]"
 
 EVENTS = {
     2027: dict(ramadan=dt.date(2027, 2, 8), eid_fitr=dt.date(2027, 3, 9), dhul_hijjah=dt.date(2027, 5, 7), eid_adha=dt.date(2027, 5, 16), new_year=dt.date(2027, 6, 6)),
@@ -244,7 +244,7 @@ def short_original(i, c):
             sn[2], "\"Did you know the Prophet ﷺ did this?\" — shown with objects only")
 
 
-HEAD = ["Day", "Date", "Slot", "Series", "Topic (EN)", "Status", "Hook (first 3 s)", "Lesson", "Source (verify before use)",
+HEAD = ["Day", "Date", "Slot", "Series", "Topic (EN)", "Status", "Hook (first 3 s)", "Lesson", "Source (checked)",
         "EN Title", "HI Title (Hinglish)", "EN Thumbnail Text", "HI Thumbnail Text", "Thumbnail Design Brief", "Format",
         "EN Description", "HI Description", "EN Tags", "HI Tags", "Needs", "EN Post (IST)", "HI Post (IST)", "Weekday",
         "Season / Event", "Phase", "Episode ID", "EN YouTube Link", "HI YouTube Link"]
@@ -367,7 +367,7 @@ def main(path):
         ["5. Never publish a weak video to keep the streak: mark it 'Skipped' and catch up later"],
         [],
         ["RELIGIOUS SAFETY"],
-        ["Every source marked [VERIFY] must be in config/approved_sources.json before that video can upload (one-time check of ~95 sources)."],
+        ["Every source marked [CHECKED] is in config/approved_sources.json (checked 2026-11-14, see docs/SOURCES_TO_REVIEW.md). Delete a line there to stop that topic uploading."],
         ["Surah recitation is NOT in the automatic plan: AI must never recite the Quran."],
         ["Prophets are never shown. 'Sunnah Minute' shows objects and characters only."],
         [],
