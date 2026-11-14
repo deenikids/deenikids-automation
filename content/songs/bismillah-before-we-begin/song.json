@@ -1,0 +1,127 @@
+{
+  "id": "bismillah-before-we-begin",
+  "episode_number": 1,
+  "category": "islamic_songs",
+  "title_en": "Bismillah Before We Begin",
+  "title_hi": "Bismillah Se Shuru Karein",
+  "lesson": "Say Bismillah before eating and Alhamdulillah after eating.",
+  "tempo_bpm": 108,
+  "key": "C major",
+  "time_signature": "4/4",
+  "target_duration_sec": [70, 85],
+
+  "religious_sources": [
+    {
+      "claim": "Say Bismillah (mention Allah's name) before eating; eat with the right hand.",
+      "reference": "Sahih al-Bukhari 5376; Sahih Muslim 2022",
+      "url": "https://sunnah.com/bukhari:5376",
+      "note": "The Prophet (peace be upon him) taught this to a young boy, Umar ibn Abi Salamah, so it is a natural lesson for children."
+    },
+    {
+      "claim": "Praise Allah (Alhamdulillah) after eating and drinking.",
+      "reference": "Sahih Muslim 2734",
+      "url": "https://sunnah.com/muslim:2734",
+      "note": "Allah is pleased with the servant who eats and praises Him for it."
+    }
+  ],
+
+  "review": {
+    "religious": {"status": "pending", "reviewer": "", "date": "", "notes": "An alim or qualified teacher must sign off before public upload."},
+    "english_lyrics": {"status": "pending", "reviewer": "", "date": "", "notes": "Outro lines 3-4 changed for rhyme; original kept below."},
+    "hinglish_lyrics": {"status": "pending", "reviewer": "", "date": "", "notes": "Native Hindi/Urdu speaker to check flow and wording."}
+  },
+
+  "lyric_changes": [
+    {
+      "where": "Outro, lines 3-4",
+      "original": "Alhamdulillah after our meal, / Thank You, Allah, for food so good!",
+      "proposed": "Alhamdulillah when we're through, / Thank You, Allah, the food's from You!",
+      "reason": "'meal' and 'good' do not rhyme; the new lines rhyme and teach that our food is a gift from Allah. Revert if you prefer the original."
+    }
+  ],
+
+  "arrangement_note": "Each lyric line takes one 4/4 bar (2.22 s at 108 BPM). Lead notes are an ORIGINAL melody written for DEENIKIDS. Notes are NAME+OCTAVE:BEATS, R = rest.",
+
+  "bars": [
+    {"section": "intro_instrumental", "chord": "C",  "lead": "C5:1 E5:0.5 G5:0.5 A5:1 G5:1"},
+    {"section": "intro_instrumental", "chord": "Am", "lead": "E5:0.5 D5:0.5 C5:1 D5:1 E5:1"},
+    {"section": "intro_instrumental", "chord": "F",  "lead": "F5:0.5 A5:0.5 C6:1 A5:1 F5:1"},
+    {"section": "intro_instrumental", "chord": "G",  "lead": "G5:0.5 F5:0.5 E5:0.5 D5:0.5 G5:2"},
+
+    {"section": "intro", "chord": "C", "lead": "G5:0.5 E5:0.5 G5:0.5 E5:0.5 A5:0.5 G5:0.5 E5:1",
+     "en": "Hello, hello, come and sing,", "hi": "Hello, hello, aao gaayein,", "hi_tts": "हेलो, हेलो, आओ गाएँ,"},
+    {"section": "intro", "chord": "G", "lead": "D5:0.5 D5:0.5 E5:0.5 F5:0.5 E5:0.5 D5:0.25 C5:0.25 D5:1",
+     "en": "A little word for everything!", "hi": "Ek pyaara lafz seekh ke jaayein!", "hi_tts": "एक प्यारा लफ़्ज़ सीख के जाएँ!"},
+
+    {"section": "turnaround", "chord": "F", "lead": "A5:0.5 G5:0.5 F5:1 E5:1 D5:1"},
+    {"section": "turnaround", "chord": "G", "lead": "G4:0.5 B4:0.5 D5:0.5 F5:0.5 G5:2"},
+
+    {"section": "verse1", "chord": "C",  "lead": "C5:0.5 E5:0.5 G5:0.5 G5:0.5 A5:0.5 G5:0.5 E5:0.5 E5:0.5",
+     "en": "Before we eat, before we start,", "hi": "Khaane se pehle, kaam se pehle,", "hi_tts": "खाने से पहले, काम से पहले,"},
+    {"section": "verse1", "chord": "F",  "lead": "F5:0.5 A5:0.5 C6:1 A5:0.5 G5:0.5 F5:0.5 F5:0.5",
+     "en": "Bismillah comes from the heart.", "hi": "Dil se bolo Bismillah pehle!", "hi_tts": "दिल से बोलो बिस्मिल्लाह पहले!"},
+    {"section": "verse1", "chord": "Am", "lead": "E5:0.5 E5:0.5 E5:0.5 A5:0.5 G5:0.5 E5:0.5 C5:0.5 E5:0.5",
+     "en": "A little word, a lovely way,", "hi": "Chhota sa lafz, pyaara tareeqa,", "hi_tts": "छोटा सा लफ़्ज़, प्यारा तरीक़ा,"},
+    {"section": "verse1", "chord": "G",  "lead": "D5:0.5 D5:0.5 E5:0.5 F5:0.5 E5:0.5 D5:0.5 G5:1",
+     "en": "To begin our meal today!", "hi": "Yehi hai khaane ka saleeqa!", "hi_tts": "यही है खाने का सलीक़ा!"},
+
+    {"section": "chorus", "chord": "C",  "lead": "E5:0.5 G5:0.5 C6:1 D6:0.5 C6:0.5 G5:1",
+     "en": "Bismillah, Bismillah,", "hi": "Bismillah, Bismillah,", "hi_tts": "बिस्मिल्लाह, बिस्मिल्लाह,"},
+    {"section": "chorus", "chord": "G",  "lead": "B5:0.5 A5:0.5 G5:0.5 D5:0.5 G5:0.5 A5:0.5 B5:1",
+     "en": "Let's begin with Bismillah!", "hi": "Shuru karein Bismillah!", "hi_tts": "शुरू करें बिस्मिल्लाह!"},
+    {"section": "chorus", "chord": "Am", "lead": "E5:0.5 A5:0.5 C6:1 D6:0.5 C6:0.5 A5:1",
+     "en": "Bismillah, Bismillah,", "hi": "Bismillah, Bismillah,", "hi_tts": "बिस्मिल्लाह, बिस्मिल्लाह,"},
+    {"section": "chorus", "chord": "F",  "lead": "A5:0.5 A5:0.5 C6:0.5 A5:0.5 G5:0.5 G5:0.5 F5:1",
+     "en": "Say it gently, say it with care!", "hi": "Pyaar se bolo, dil se bolo!", "hi_tts": "प्यार से बोलो, दिल से बोलो!"},
+
+    {"section": "interlude", "chord": "G", "lead": "G5:0.5 A5:0.5 B5:0.5 D6:0.5 C6:1 B5:1"},
+    {"section": "interlude", "chord": "G", "lead": "A5:0.5 G5:0.5 F5:0.5 D5:0.5 G5:2"},
+
+    {"section": "verse2", "chord": "C",  "lead": "C5:0.5 E5:0.5 G5:0.5 G5:0.5 A5:0.5 G5:0.5 E5:0.5 E5:0.5",
+     "en": "Ayaan is ready, Amira too,", "hi": "Ayaan taiyaar, Amira bhi,", "hi_tts": "अयान तैयार, अमीरा भी,"},
+    {"section": "verse2", "chord": "F",  "lead": "F5:0.5 A5:0.5 C6:1 A5:0.5 G5:0.5 F5:0.5 F5:0.5",
+     "en": "Deeni smiles and sings with you.", "hi": "Deeni hans ke gaaye sabhi!", "hi_tts": "दीनी हँस के गाए सभी!"},
+    {"section": "verse2", "chord": "Am", "lead": "E5:0.5 E5:0.5 E5:0.5 A5:0.5 G5:0.5 E5:0.5 C5:0.5 E5:0.5",
+     "en": "We wash our hands, then take our seat,", "hi": "Haath dho ke baithe hum,", "hi_tts": "हाथ धो के बैठे हम,"},
+    {"section": "verse2", "chord": "G",  "lead": "D5:0.5 D5:0.5 E5:0.5 F5:0.5 E5:0.5 D5:0.5 G5:1",
+     "en": "Bismillah before we eat!", "hi": "Bismillah bol ke khaayein hum!", "hi_tts": "बिस्मिल्लाह बोल के खाएँ हम!"},
+
+    {"section": "chorus", "chord": "C",  "lead": "E5:0.5 G5:0.5 C6:1 D6:0.5 C6:0.5 G5:1",
+     "en": "Bismillah, Bismillah,", "hi": "Bismillah, Bismillah,", "hi_tts": "बिस्मिल्लाह, बिस्मिल्लाह,"},
+    {"section": "chorus", "chord": "G",  "lead": "B5:0.5 A5:0.5 G5:0.5 D5:0.5 G5:0.5 A5:0.5 B5:1",
+     "en": "Let's begin with Bismillah!", "hi": "Shuru karein Bismillah!", "hi_tts": "शुरू करें बिस्मिल्लाह!"},
+    {"section": "chorus", "chord": "Am", "lead": "E5:0.5 A5:0.5 C6:1 D6:0.5 C6:0.5 A5:1",
+     "en": "Bismillah, Bismillah,", "hi": "Bismillah, Bismillah,", "hi_tts": "बिस्मिल्लाह, बिस्मिल्लाह,"},
+    {"section": "chorus", "chord": "F",  "lead": "A5:0.5 A5:0.5 C6:0.5 A5:0.5 G5:0.5 G5:0.5 F5:1",
+     "en": "Say it gently, say it with care!", "hi": "Pyaar se bolo, dil se bolo!", "hi_tts": "प्यार से बोलो, दिल से बोलो!"},
+
+    {"section": "outro", "chord": "Am", "lead": "E5:0.5 E5:0.5 G5:0.5 A5:0.5 A5:0.5 B5:0.5 C6:1",
+     "en": "What do we say before we eat?", "hi": "Khaane se pehle kya bolein?", "hi_tts": "खाने से पहले क्या बोलें?"},
+    {"section": "outro", "chord": "F",  "lead": "C6:0.5 A5:0.5 F5:1 A5:0.5 A5:0.5 G5:0.5 F5:0.5",
+     "en": "Bismillah! That's our little beat!", "hi": "Bismillah! Sab mil ke bolein!", "hi_tts": "बिस्मिल्लाह! सब मिल के बोलें!"},
+    {"section": "outro", "chord": "C",  "lead": "E5:0.5 E5:0.5 G5:0.5 G5:0.5 C6:0.5 C6:0.5 G5:1",
+     "en": "Alhamdulillah when we're through,", "hi": "Khaana khatam, Alhamdulillah,", "hi_tts": "खाना ख़तम, अल्हम्दुलिल्लाह,"},
+    {"section": "outro", "chord": "G",  "lead": "D5:0.5 D5:0.5 G5:0.5 G5:0.5 F5:0.5 E5:0.5 D5:1",
+     "en": "Thank You, Allah, the food's from You!", "hi": "Shukriya Allah, sab Teri ata!", "hi_tts": "शुक्रिया अल्लाह, सब तेरी अता!"},
+
+    {"section": "ending", "chord": "C", "lead": "E5:0.5 G5:0.5 C6:1 D6:0.5 C6:0.5 G5:1"},
+    {"section": "ending", "chord": "F", "lead": "A5:0.5 G5:0.5 F5:1 E5:1 D5:1"},
+    {"section": "ending", "chord": "G", "lead": "G5:0.5 A5:0.5 B5:0.5 D6:0.5 C6:2"},
+    {"section": "ending", "chord": "C", "lead": "C6:4"}
+  ],
+
+  "youtube": {
+    "en": {
+      "title": "Bismillah Before We Begin | Islamic Song for Kids | DEENIKIDS",
+      "description": "Sing along with Deeni, Ayaan, Amira and Bubbly! Little Muslims learn to say Bismillah before eating and Alhamdulillah after eating.\n\nLesson source: Sahih al-Bukhari 5376 and Sahih Muslim 2734.\n\nDEENIKIDS - Little Hearts, Big Imaan.",
+      "tags": ["bismillah song", "islamic songs for kids", "muslim kids", "nursery rhymes", "duas for kids", "deenikids"],
+      "language": "en"
+    },
+    "hi": {
+      "title": "Bismillah Se Shuru Karein | Bachchon Ke Liye Islamic Song | DEENIKIDS",
+      "description": "Deeni, Ayaan, Amira aur Bubbly ke saath gaao! Khaane se pehle Bismillah aur khaane ke baad Alhamdulillah bolna seekho.\n\nSource: Sahih al-Bukhari 5376, Sahih Muslim 2734.\n\nDEENIKIDS - Little Hearts, Big Imaan.",
+      "tags": ["bismillah song hindi", "islamic songs for kids urdu", "muslim bachche", "deenikids"],
+      "language": "hi"
+    }
+  }
+}

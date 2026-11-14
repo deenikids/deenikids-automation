@@ -1,0 +1,10 @@
+{
+  "note": "Episodes are built in this order. Only songs whose review is approved can be uploaded.",
+  "queue": [
+    {"song_id": "bismillah-before-we-begin", "status": "in_production"},
+    {"song_id": "alhamdulillah-song", "status": "idea"},
+    {"song_id": "assalamu-alaikum-song", "status": "idea"},
+    {"song_id": "wudu-song", "status": "idea"},
+    {"song_id": "five-daily-salah-song", "status": "idea"}
+  ]
+}

@@ -1,0 +1,41 @@
+name: Checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg libraqm0 libfribidi0
+      - run: pip install numpy scipy pillow indic-transliteration
+      - name: Validate every song file
+        run: |
+          python - <<'PY'
+          import glob, json, os, sys
+          sys.path.insert(0, "scripts")
+          from common import validate_song
+          for p in glob.glob("content/songs/*/song.json"):
+              validate_song(json.load(open(p, encoding="utf-8")))
+              assert os.path.exists(os.path.join(os.path.dirname(p), "storyboard.json")), p + " has no storyboard"
+              print("OK", p)
+          PY
+      - name: Quick render test (music + 5 s of video, no AI voice)
+        run: |
+          python scripts/generate_music.py bismillah-before-we-begin
+          python - <<'PY'
+          import json; p="config/settings.json"; s=json.load(open(p)); s["tts"]["enabled"]=False; json.dump(s,open(p,"w"))
+          PY
+          python scripts/generate_voice.py bismillah-before-we-begin
+          python scripts/render_animatic.py bismillah-before-we-begin --lang en --seconds 5
+          python scripts/render_animatic.py bismillah-before-we-begin --lang hi --short chorus --seconds 5
+          ls -la output/bismillah-before-we-begin/episodes output/bismillah-before-we-begin/shorts
+      - name: Automatic mode test (Day 2, 12-second renders, no upload)
+        run: python scripts/daily.py --day 2 --no-upload --test

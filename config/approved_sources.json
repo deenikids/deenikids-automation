@@ -1,0 +1,7 @@
+{
+  "how_to": "A qualified reviewer checks each source in docs/SOURCES_TO_REVIEW.md (the reference is correct AND the lesson line matches it). Copy the exact source text into 'approved'. Videos whose source is not here are built but never uploaded.",
+  "approved": [
+    "Sahih al-Bukhari 5376; Sahih Muslim 2022",
+    "Sahih Muslim 2734"
+  ]
+}

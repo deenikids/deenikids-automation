@@ -1,0 +1,93 @@
+name: Build episode
+
+on:
+  workflow_dispatch:
+    inputs:
+      song_id:
+        description: "Song folder name in content/songs"
+        default: "bismillah-before-we-begin"
+        required: true
+      test_only:
+        description: "Quick test (12 seconds per video)"
+        type: boolean
+        default: false
+      upload:
+        description: "Upload to YouTube after QC (needs review approval + secrets)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: episode-${{ github.event.inputs.song_id }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install system tools (FFmpeg, eSpeak for Hindi voice)
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg espeak-ng libraqm0 libfribidi0
+
+      - name: Cache AI voice model
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: hf-kokoro-v1
+
+      - name: Install Python packages (CPU-only PyTorch keeps it small and free)
+        run: |
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install -r requirements.txt
+
+      - name: Build episode
+        run: |
+          if [ "${{ github.event.inputs.test_only }}" = "true" ]; then
+            python scripts/build_episode.py "${{ github.event.inputs.song_id }}" --test
+          else
+            python scripts/build_episode.py "${{ github.event.inputs.song_id }}"
+          fi
+
+      - name: Save videos for download (kept 14 days)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ github.event.inputs.song_id }}-videos
+          path: |
+            output/${{ github.event.inputs.song_id }}/episodes/
+            output/${{ github.event.inputs.song_id }}/shorts/
+            output/${{ github.event.inputs.song_id }}/thumbnails/
+            output/${{ github.event.inputs.song_id }}/qc_report.json
+            output/${{ github.event.inputs.song_id }}/audio/singer_guide.wav
+          retention-days: 14
+
+      - name: Review gate
+        if: github.event.inputs.upload == 'true'
+        run: python scripts/review_gate.py "${{ github.event.inputs.song_id }}"
+
+      - name: Upload to YouTube
+        if: github.event.inputs.upload == 'true' && github.event.inputs.test_only != 'true'
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: python scripts/upload_youtube.py "${{ github.event.inputs.song_id }}" --what all
+
+      - name: Save upload ledger (prevents duplicate uploads)
+        if: always() && github.event.inputs.upload == 'true'
+        run: |
+          git config user.name "deenikids-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add database/uploads.json
+          git diff --cached --quiet || (git commit -m "Record uploads for ${{ github.event.inputs.song_id }}" && git push)

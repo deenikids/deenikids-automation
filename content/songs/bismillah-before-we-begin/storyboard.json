@@ -1,0 +1,429 @@
+{
+  "episode": "bismillah-before-we-begin",
+  "fps": 24,
+  "note": "Bars are 0-based and end-exclusive. 1 bar = 2.222 s at 108 BPM. Used by the animatic renderer now and by the Blender scene builder in Phase 3.",
+  "scenes": [
+    {
+      "id": "S01",
+      "bars": [
+        0,
+        4
+      ],
+      "bg": "ocean",
+      "camera": "slow_push_in",
+      "title_card": true,
+      "chars": [
+        {
+          "name": "deeni",
+          "x": 0.5,
+          "y": 0.62,
+          "action": "swim_in"
+        },
+        {
+          "name": "bubbly",
+          "x": 0.8,
+          "y": 0.75,
+          "action": "bob"
+        }
+      ],
+      "description": "Underwater. Title 'Bismillah Before We Begin' pops in. Deeni swims in inside his bubble, Bubbly waves a tentacle."
+    },
+    {
+      "id": "S02",
+      "bars": [
+        4,
+        6
+      ],
+      "bg": "home",
+      "camera": "static",
+      "chars": [
+        {
+          "name": "ayaan",
+          "x": 0.22,
+          "y": 0.7,
+          "action": "wave"
+        },
+        {
+          "name": "amira",
+          "x": 0.42,
+          "y": 0.7,
+          "action": "wave"
+        },
+        {
+          "name": "deeni",
+          "x": 0.64,
+          "y": 0.55,
+          "action": "bob"
+        },
+        {
+          "name": "bubbly",
+          "x": 0.84,
+          "y": 0.72,
+          "action": "wave"
+        }
+      ],
+      "description": "All four friends wave at the camera in a bright living room: 'Hello, hello, come and sing!'"
+    },
+    {
+      "id": "S03",
+      "bars": [
+        6,
+        8
+      ],
+      "bg": "kitchen",
+      "camera": "static",
+      "props": [
+        "table",
+        "plates_appear"
+      ],
+      "chars": [
+        {
+          "name": "ayaan",
+          "x": 0.3,
+          "y": 0.62,
+          "action": "walk_in_left"
+        },
+        {
+          "name": "amira",
+          "x": 0.7,
+          "y": 0.62,
+          "action": "walk_in_right"
+        }
+      ],
+      "description": "Kitchen. Plates pop onto the table one by one with a 'ding'. Ayaan and Amira walk to their seats."
+    },
+    {
+      "id": "S04",
+      "bars": [
+        8,
+        12
+      ],
+      "bg": "kitchen",
+      "camera": "slow_push_in",
+      "props": [
+        "table",
+        "food"
+      ],
+      "chars": [
+        {
+          "name": "ayaan",
+          "x": 0.3,
+          "y": 0.62,
+          "action": "sing"
+        },
+        {
+          "name": "amira",
+          "x": 0.7,
+          "y": 0.62,
+          "action": "sing"
+        },
+        {
+          "name": "deeni",
+          "x": 0.5,
+          "y": 0.3,
+          "action": "bob"
+        }
+      ],
+      "description": "Dates, bread and fruit on the table. The children sing verse 1 while Deeni floats above the table in his bubble."
+    },
+    {
+      "id": "S05",
+      "bars": [
+        12,
+        16
+      ],
+      "bg": "stage_green",
+      "camera": "beat_bounce",
+      "props": [
+        "word_bismillah"
+      ],
+      "chars": [
+        {
+          "name": "ayaan",
+          "x": 0.2,
+          "y": 0.74,
+          "action": "dance"
+        },
+        {
+          "name": "amira",
+          "x": 0.4,
+          "y": 0.74,
+          "action": "dance"
+        },
+        {
+          "name": "deeni",
+          "x": 0.6,
+          "y": 0.66,
+          "action": "dance"
+        },
+        {
+          "name": "bubbly",
+          "x": 0.8,
+          "y": 0.76,
+          "action": "dance"
+        }
+      ],
+      "description": "CHORUS. Bright stage, big bouncing 'Bismillah' with Arabic بِسْمِ اللَّهِ above. Everyone dances on the beat."
+    },
+    {
+      "id": "S06",
+      "bars": [
+        16,
+        18
+      ],
+      "bg": "ocean",
+      "camera": "static",
+      "props": [
+        "juggle_fruit"
+      ],
+      "chars": [
+        {
+          "name": "bubbly",
+          "x": 0.5,
+          "y": 0.62,
+          "action": "juggle"
+        }
+      ],
+      "description": "Funny break: Bubbly juggles an apple, a banana and a date with four tentacles. Bubbles pop."
+    },
+    {
+      "id": "S07",
+      "bars": [
+        18,
+        20
+      ],
+      "bg": "home",
+      "camera": "static",
+      "chars": [
+        {
+          "name": "ayaan",
+          "x": 0.3,
+          "y": 0.7,
+          "action": "sing"
+        },
+        {
+          "name": "amira",
+          "x": 0.5,
+          "y": 0.7,
+          "action": "sing"
+        },
+        {
+          "name": "deeni",
+          "x": 0.72,
+          "y": 0.55,
+          "action": "sing"
+        }
+      ],
+      "description": "Verse 2: Ayaan, Amira and Deeni each pop up as they are named."
+    },
+    {
+      "id": "S08",
+      "bars": [
+        20,
+        22
+      ],
+      "bg": "bathroom",
+      "camera": "static",
+      "props": [
+        "sink",
+        "soap_bubbles"
+      ],
+      "chars": [
+        {
+          "name": "ayaan",
+          "x": 0.35,
+          "y": 0.52,
+          "action": "wash_hands"
+        },
+        {
+          "name": "amira",
+          "x": 0.65,
+          "y": 0.52,
+          "action": "wash_hands"
+        }
+      ],
+      "description": "Washing hands at the sink with lots of soap bubbles, then a quick cut back to the table."
+    },
+    {
+      "id": "S09",
+      "bars": [
+        22,
+        26
+      ],
+      "bg": "stage_pink",
+      "camera": "beat_bounce",
+      "props": [
+        "word_bismillah"
+      ],
+      "chars": [
+        {
+          "name": "bubbly",
+          "x": 0.2,
+          "y": 0.76,
+          "action": "dance"
+        },
+        {
+          "name": "deeni",
+          "x": 0.4,
+          "y": 0.66,
+          "action": "dance"
+        },
+        {
+          "name": "amira",
+          "x": 0.6,
+          "y": 0.74,
+          "action": "dance"
+        },
+        {
+          "name": "ayaan",
+          "x": 0.8,
+          "y": 0.74,
+          "action": "dance"
+        }
+      ],
+      "description": "CHORUS repeat. Different colour stage and reversed line-up so it is not a copy of S05."
+    },
+    {
+      "id": "S10",
+      "bars": [
+        26,
+        28
+      ],
+      "bg": "kitchen",
+      "camera": "static",
+      "props": [
+        "table",
+        "food",
+        "question_mark"
+      ],
+      "chars": [
+        {
+          "name": "bubbly",
+          "x": 0.5,
+          "y": 0.35,
+          "action": "ask",
+          "sing_bars": [
+            26,
+            27
+          ]
+        },
+        {
+          "name": "ayaan",
+          "x": 0.3,
+          "y": 0.62,
+          "action": "sing",
+          "sing_bars": [
+            27,
+            28
+          ]
+        },
+        {
+          "name": "amira",
+          "x": 0.7,
+          "y": 0.62,
+          "action": "sing",
+          "sing_bars": [
+            27,
+            28
+          ]
+        }
+      ],
+      "description": "Bubbly asks: 'What do we say before we eat?' The children shout 'Bismillah!'"
+    },
+    {
+      "id": "S11",
+      "bars": [
+        28,
+        30
+      ],
+      "bg": "kitchen",
+      "camera": "slow_push_in",
+      "props": [
+        "table",
+        "empty_plates",
+        "word_alhamdulillah"
+      ],
+      "chars": [
+        {
+          "name": "ayaan",
+          "x": 0.3,
+          "y": 0.62,
+          "action": "happy"
+        },
+        {
+          "name": "amira",
+          "x": 0.7,
+          "y": 0.62,
+          "action": "happy"
+        }
+      ],
+      "description": "Empty plates, happy tummies. 'Alhamdulillah' with Arabic الْحَمْدُ لِلَّهِ."
+    },
+    {
+      "id": "S12",
+      "bars": [
+        30,
+        35
+      ],
+      "bg": "stage_green",
+      "camera": "static",
+      "end_card": true,
+      "chars": [
+        {
+          "name": "ayaan",
+          "x": 0.2,
+          "y": 0.74,
+          "action": "wave"
+        },
+        {
+          "name": "amira",
+          "x": 0.4,
+          "y": 0.74,
+          "action": "wave"
+        },
+        {
+          "name": "deeni",
+          "x": 0.6,
+          "y": 0.66,
+          "action": "wave"
+        },
+        {
+          "name": "bubbly",
+          "x": 0.8,
+          "y": 0.76,
+          "action": "wave"
+        }
+      ],
+      "description": "End card: DEENIKIDS logo and 'Little Hearts, Big Imaan.' Everyone waves goodbye."
+    }
+  ],
+  "shorts": [
+    {
+      "id": "chorus",
+      "bars": [
+        12,
+        26
+      ],
+      "title_en": "Bismillah Chorus! | Islamic Song for Kids #shorts",
+      "title_hi": "Bismillah Chorus! | Bachchon Ka Islamic Song #shorts"
+    },
+    {
+      "id": "ayaan-learns",
+      "bars": [
+        26,
+        34
+      ],
+      "title_en": "What Do We Say Before We Eat? | DEENIKIDS #shorts",
+      "title_hi": "Khaane Se Pehle Kya Bolein? | DEENIKIDS #shorts"
+    },
+    {
+      "id": "meet-deeni",
+      "bars": [
+        0,
+        8
+      ],
+      "title_en": "Meet Deeni and Friends! | DEENIKIDS #shorts",
+      "title_hi": "Deeni Aur Dost! | DEENIKIDS #shorts"
+    }
+  ]
+}

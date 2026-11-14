@@ -1,0 +1,68 @@
+{
+  "brand": "Deeni & Friends",
+  "tagline": "Little Hearts, Big Imaan.",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "video": {
+    "fps": 24,
+    "long": [
+      1920,
+      1080
+    ],
+    "short": [
+      1080,
+      1920
+    ],
+    "crf": 20,
+    "preset": "veryfast"
+  },
+  "tts": {
+    "enabled": true,
+    "en": {
+      "lang_code": "a",
+      "voice": "af_heart",
+      "speed": 1.0
+    },
+    "hi": {
+      "lang_code": "h",
+      "voice": "hf_alpha",
+      "speed": 1.0
+    },
+    "pronunciations": {
+      "en": {
+        "Bismillah": "bɪsmɪlˈlɑː",
+        "Alhamdulillah": "ʌlhʌmdʊlɪlˈlɑː",
+        "Allah": "ʌlˈlɑː",
+        "Ayaan": "ʌjˈɑːn",
+        "Amira": "ʌˈmiːɹʌ"
+      },
+      "hi": {}
+    }
+  },
+  "youtube": {
+    "made_for_kids": true,
+    "category_id": "27",
+    "privacy_on_upload": "private",
+    "api_project_audited": false,
+    "contains_synthetic_media": null,
+    "playlists": {
+      "en": "",
+      "hi": ""
+    }
+  },
+  "qc": {
+    "long_duration_sec": [
+      60,
+      330
+    ],
+    "short_duration_sec": [
+      10,
+      60
+    ],
+    "max_peak_db": -0.5,
+    "min_mean_db": -30,
+    "max_black_sec": 1.0
+  }
+}

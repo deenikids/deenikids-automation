@@ -1,0 +1,16 @@
+# Core pipeline (all free / open source)
+numpy>=1.26
+scipy>=1.11
+pillow>=10.3
+# YouTube upload
+google-api-python-client>=2.130
+google-auth>=2.29
+google-auth-oauthlib>=1.2
+# Free AI voice (Apache-2.0). Install CPU-only torch first - see the workflow.
+kokoro>=0.9.4
+misaki[en]>=0.9.4
+soundfile>=0.12
+indic-transliteration>=2.3
+# Real singing (free): Kaggle API to run ACE-Step on Kaggle's free GPU, Whisper to check the words
+kaggle>=1.6
+faster-whisper>=1.0
