@@ -17,8 +17,21 @@ OUT = "/kaggle/working/out"
 ACE = "/kaggle/working/ace"
 os.makedirs(OUT, exist_ok=True)
 
-subprocess.run(f"git clone --depth 1 https://github.com/ACE-Step/ACE-Step-1.5.git {ACE}", shell=True, check=True)
-subprocess.run(f"pip install -q -e {ACE}", shell=True, check=True)
+if os.environ.get("DEENI_INNER") != "1":
+    # Kaggle runs Python 3.13; ACE-Step needs 3.11-3.12 and installs with uv (its README: `uv sync`).
+    # So: clone, `uv sync` (uv fetches Python 3.12 itself), then re-run this same file inside that environment.
+    def run(cmd):
+        print("+", cmd, flush=True)
+        subprocess.run(cmd, shell=True, check=True)
+    if not os.path.isdir(ACE):
+        run(f"git clone --depth 1 https://github.com/ACE-Step/ACE-Step-1.5.git {ACE}")
+    run("pip install -q uv")
+    run(f"cd {ACE} && uv sync")
+    me = "/kaggle/working/sing_inner.py"
+    shutil.copy(os.path.abspath(__file__), me)
+    env = dict(os.environ, DEENI_INNER="1")
+    sys.exit(subprocess.run(f"cd {ACE} && uv run python {me}", shell=True, env=env).returncode)
+
 sys.path.insert(0, ACE)
 
 from acestep.handler import AceStepHandler  # noqa: E402
