@@ -1,0 +1,194 @@
+{
+ "episode": "s3-0002-what-do-we-say-bismillah-before-eating-quiz-at-home",
+ "fps": 24,
+ "auto": true,
+ "scenes": [
+  {
+   "id": "S01",
+   "bars": [
+    0,
+    1
+   ],
+   "camera": "static",
+   "chars": [
+    {
+     "name": "deeni",
+     "x": 0.5,
+     "y": 0.62,
+     "action": "swim_in"
+    },
+    {
+     "name": "bubbly",
+     "x": 0.82,
+     "y": 0.75,
+     "action": "wave"
+    }
+   ],
+   "props": [],
+   "bg": "kitchen",
+   "title_card": true
+  },
+  {
+   "id": "S02",
+   "bars": [
+    1,
+    5
+   ],
+   "camera": "beat_bounce",
+   "chars": [
+    {
+     "name": "ayaan",
+     "x": 0.16,
+     "y": 0.74,
+     "action": "dance"
+    },
+    {
+     "name": "amira",
+     "x": 0.38,
+     "y": 0.74,
+     "action": "dance"
+    },
+    {
+     "name": "deeni",
+     "x": 0.62,
+     "y": 0.62,
+     "action": "dance"
+    },
+    {
+     "name": "bubbly",
+     "x": 0.84,
+     "y": 0.76,
+     "action": "dance"
+    }
+   ],
+   "props": [],
+   "bg": "stage_green",
+   "word": {
+    "text": "What do we say?!",
+    "text_hi": "Kya Bolein?!",
+    "arabic": null,
+    "emoji": "🍽"
+   }
+  },
+  {
+   "id": "S03",
+   "bars": [
+    5,
+    9
+   ],
+   "camera": "static",
+   "chars": [
+    {
+     "name": "ayaan",
+     "x": 0.26,
+     "y": 0.7,
+     "action": "sing"
+    },
+    {
+     "name": "amira",
+     "x": 0.5,
+     "y": 0.7,
+     "action": "sing"
+    },
+    {
+     "name": "deeni",
+     "x": 0.76,
+     "y": 0.52,
+     "action": "bob"
+    }
+   ],
+   "props": [],
+   "bg": "kitchen"
+  },
+  {
+   "id": "S04",
+   "bars": [
+    9,
+    13
+   ],
+   "camera": "beat_bounce",
+   "chars": [
+    {
+     "name": "bubbly",
+     "x": 0.16,
+     "y": 0.76,
+     "action": "dance"
+    },
+    {
+     "name": "deeni",
+     "x": 0.38,
+     "y": 0.62,
+     "action": "dance"
+    },
+    {
+     "name": "amira",
+     "x": 0.62,
+     "y": 0.74,
+     "action": "dance"
+    },
+    {
+     "name": "ayaan",
+     "x": 0.84,
+     "y": 0.74,
+     "action": "dance"
+    }
+   ],
+   "props": [],
+   "bg": "stage_pink",
+   "word": {
+    "text": "What do we say?!",
+    "text_hi": "Kya Bolein?!",
+    "arabic": null,
+    "emoji": "🍽"
+   }
+  },
+  {
+   "id": "S05",
+   "bars": [
+    13,
+    15
+   ],
+   "camera": "static",
+   "chars": [
+    {
+     "name": "ayaan",
+     "x": 0.2,
+     "y": 0.74,
+     "action": "wave"
+    },
+    {
+     "name": "amira",
+     "x": 0.4,
+     "y": 0.74,
+     "action": "wave"
+    },
+    {
+     "name": "deeni",
+     "x": 0.62,
+     "y": 0.62,
+     "action": "wave"
+    },
+    {
+     "name": "bubbly",
+     "x": 0.82,
+     "y": 0.76,
+     "action": "wave"
+    }
+   ],
+   "props": [],
+   "bg": "stage_green",
+   "end_card": true
+  }
+ ],
+ "shorts": [
+  {
+   "id": "original",
+   "bars": [
+    0,
+    14
+   ],
+   "title_en": "What Do We Say? Bismillah Before Eating Quiz at Home 🤩 #shorts",
+   "title_hi": "Kya Bolte Hain? Khaane Se Pehle Bismillah Quiz Ghar Par 🤩 #shorts"
+  }
+ ]
+}

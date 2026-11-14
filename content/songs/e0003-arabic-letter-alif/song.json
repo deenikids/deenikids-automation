@@ -1,0 +1,379 @@
+{
+ "id": "e0003-arabic-letter-alif",
+ "auto": true,
+ "plan_day": 2,
+ "slot": "Long-A",
+ "series": "Arabic for Little Ones",
+ "title_en": "Arabic Letter Alif",
+ "title_hi": "Arabic Harf Alif",
+ "lesson": "Learn the Arabic letter Alif",
+ "tempo_bpm": 116,
+ "transpose": -3,
+ "key": "C major (transposed)",
+ "time_signature": "4/4",
+ "religious_sources": [],
+ "source_text": "Arabic pronunciation check by teacher",
+ "review": {
+  "mode": "auto",
+  "note": "Religious sources are checked against config/approved_sources.json before upload"
+ },
+ "visual": {
+  "emoji": null,
+  "arabic": "ا"
+ },
+ "word_en": "Alif!",
+ "word_hi": "Alif!",
+ "bars": [
+  {
+   "section": "intro_instrumental",
+   "chord": "C",
+   "lead": "G5:0.5 E5:0.5 C5:0.5 E5:0.5 E5:0.5 G5:0.5 G5:1"
+  },
+  {
+   "section": "intro_instrumental",
+   "chord": "F",
+   "lead": "C6:0.5 A5:0.5 B5:1 C6:1 C6:1"
+  },
+  {
+   "section": "verse1",
+   "chord": "C",
+   "lead": "E5:0.5 D5:0.5 F5:0.5 G5:0.5 G5:1 G5:1",
+   "en": "Clap your hands and tap your feet,",
+   "hi": "Taali bajao, pair hilao,",
+   "hi_tts": "ताली बजओ, पैर हिलओ,"
+  },
+  {
+   "section": "verse1",
+   "chord": "F",
+   "lead": "A5:0.5 C6:0.5 C6:0.5 C6:0.5 C6:2",
+   "en": "Let's learn Alif, it's so sweet!",
+   "hi": "Alif seekho, saath mein gaao!",
+   "hi_tts": "अलिफ़ सीखो, साथ में गाओ!"
+  },
+  {
+   "section": "verse1",
+   "chord": "G",
+   "lead": "B5:1 C6:0.5 C6:0.5 B5:1 B5:1",
+   "en": "Deeni swims and Bubbly spins,",
+   "hi": "Deeni tairey, Bubbly ghoome,",
+   "hi_tts": "दीनी तैरेय, बबली घूमे,"
+  },
+  {
+   "section": "verse1",
+   "chord": "C",
+   "lead": "C6:0.5 C6:0.5 C6:1 C6:2",
+   "en": "Here we go, the song begins!",
+   "hi": "Gaana shuru, sab mil ke jhoome!",
+   "hi_tts": "गाना शुरु, सब मिल के झूमे!"
+  },
+  {
+   "section": "chorus",
+   "chord": "C",
+   "lead": "G5:0.5 E5:0.5 C5:0.5 E5:0.5 E5:0.5 G5:0.5 G5:1",
+   "en": "Alif, Alif!",
+   "hi": "Alif, Alif!",
+   "hi_tts": "अलिफ़, अलिफ़!"
+  },
+  {
+   "section": "chorus",
+   "chord": "F",
+   "lead": "C6:0.5 A5:0.5 B5:1 C6:1 C6:1",
+   "en": "Clap your hands and sing along!",
+   "hi": "Taali bajao, saath mein gaao!",
+   "hi_tts": "ताली बजओ, साथ में गाओ!"
+  },
+  {
+   "section": "chorus",
+   "chord": "Am",
+   "lead": "G5:0.5 E5:0.5 C5:0.5 E5:0.5 E5:0.5 G5:0.5 G5:1",
+   "en": "Alif, Alif!",
+   "hi": "Alif, Alif!",
+   "hi_tts": "अलिफ़, अलिफ़!"
+  },
+  {
+   "section": "chorus",
+   "chord": "G",
+   "lead": "B5:0.5 C6:0.5 C6:1 B5:2",
+   "en": "This is our happy song!",
+   "hi": "Khushi ka gaana, sab dohraao!",
+   "hi_tts": "खुशी का गाना, सब दोह्राओ!"
+  },
+  {
+   "section": "verse2",
+   "chord": "C",
+   "lead": "E5:0.5 D5:0.5 F5:0.5 G5:0.5 G5:1 G5:1",
+   "en": "Say it slowly, say it clear,",
+   "hi": "Dheere bolo, saaf bolo,",
+   "hi_tts": "धीरे बोलो, साफ़ बोलो,"
+  },
+  {
+   "section": "verse2",
+   "chord": "F",
+   "lead": "A5:0.5 C6:0.5 C6:0.5 C6:0.5 C6:2",
+   "en": "Alif, Alif, now you hear!",
+   "hi": "Alif, Alif, munh kholo!",
+   "hi_tts": "अलिफ़, अलिफ़, मुन्ह खोलो!"
+  },
+  {
+   "section": "verse2",
+   "chord": "G",
+   "lead": "B5:1 C6:0.5 C6:0.5 B5:1 B5:1",
+   "en": "Learn the Arabic letter Alif!",
+   "hi": "Arabic Harf Alif!",
+   "hi_tts": "अरबिच हर्फ़ अलिफ़!"
+  },
+  {
+   "section": "verse2",
+   "chord": "C",
+   "lead": "C6:0.5 C6:0.5 C6:1 C6:2",
+   "en": "Arabic is fun, my dear!",
+   "hi": "Arabic seekhna mazedaar, bolo!",
+   "hi_tts": "अरबिच सीख्ना मज़ेदार, बोलो!"
+  },
+  {
+   "section": "chorus",
+   "chord": "C",
+   "lead": "G5:0.5 E5:0.5 C5:0.5 E5:0.5 E5:0.5 G5:0.5 G5:1",
+   "en": "Alif, Alif!",
+   "hi": "Alif, Alif!",
+   "hi_tts": "अलिफ़, अलिफ़!"
+  },
+  {
+   "section": "chorus",
+   "chord": "F",
+   "lead": "C6:0.5 A5:0.5 B5:1 C6:1 C6:1",
+   "en": "Clap your hands and sing along!",
+   "hi": "Taali bajao, saath mein gaao!",
+   "hi_tts": "ताली बजओ, साथ में गाओ!"
+  },
+  {
+   "section": "chorus",
+   "chord": "Am",
+   "lead": "G5:0.5 E5:0.5 C5:0.5 E5:0.5 E5:0.5 G5:0.5 G5:1",
+   "en": "Alif, Alif!",
+   "hi": "Alif, Alif!",
+   "hi_tts": "अलिफ़, अलिफ़!"
+  },
+  {
+   "section": "chorus",
+   "chord": "G",
+   "lead": "B5:0.5 C6:0.5 C6:1 B5:2",
+   "en": "This is our happy song!",
+   "hi": "Khushi ka gaana, sab dohraao!",
+   "hi_tts": "खुशी का गाना, सब दोह्राओ!"
+  },
+  {
+   "section": "bridge",
+   "chord": "C",
+   "lead": "E5:0.5 D5:0.5 F5:0.5 G5:0.5 G5:1 G5:1",
+   "en": "Now let's say it all together,",
+   "hi": "Ab mil kar sab bolo,",
+   "hi_tts": "अब मिल कर सब बोलो,"
+  },
+  {
+   "section": "bridge",
+   "chord": "F",
+   "lead": "A5:0.5 C6:0.5 C6:0.5 C6:0.5 C6:2",
+   "en": "Alif! Alif!",
+   "hi": "Alif! Alif!",
+   "hi_tts": "अलिफ़! अलिफ़!"
+  },
+  {
+   "section": "bridge",
+   "chord": "G",
+   "lead": "B5:1 C6:0.5 C6:0.5 B5:1 B5:1",
+   "en": "Learn the Arabic letter Alif!",
+   "hi": "Arabic Harf Alif!",
+   "hi_tts": "अरबिच हर्फ़ अलिफ़!"
+  },
+  {
+   "section": "bridge",
+   "chord": "C",
+   "lead": "C6:0.5 C6:0.5 C6:1 C6:2",
+   "en": "Hooray, we did it together!",
+   "hi": "Hooray, humne kar dikhaaya!",
+   "hi_tts": "हुर्रे, हुम्ने कर दिखाया!"
+  },
+  {
+   "section": "chorus",
+   "chord": "C",
+   "lead": "G5:0.5 E5:0.5 C5:0.5 E5:0.5 E5:0.5 G5:0.5 G5:1",
+   "en": "Alif, Alif!",
+   "hi": "Alif, Alif!",
+   "hi_tts": "अलिफ़, अलिफ़!"
+  },
+  {
+   "section": "chorus",
+   "chord": "F",
+   "lead": "C6:0.5 A5:0.5 B5:1 C6:1 C6:1",
+   "en": "Clap your hands and sing along!",
+   "hi": "Taali bajao, saath mein gaao!",
+   "hi_tts": "ताली बजओ, साथ में गाओ!"
+  },
+  {
+   "section": "chorus",
+   "chord": "Am",
+   "lead": "G5:0.5 E5:0.5 C5:0.5 E5:0.5 E5:0.5 G5:0.5 G5:1",
+   "en": "Alif, Alif!",
+   "hi": "Alif, Alif!",
+   "hi_tts": "अलिफ़, अलिफ़!"
+  },
+  {
+   "section": "chorus",
+   "chord": "G",
+   "lead": "B5:0.5 C6:0.5 C6:1 B5:2",
+   "en": "This is our happy song!",
+   "hi": "Khushi ka gaana, sab dohraao!",
+   "hi_tts": "खुशी का गाना, सब दोह्राओ!"
+  },
+  {
+   "section": "interlude",
+   "chord": "Am",
+   "lead": "G5:0.5 E5:0.5 C5:0.5 E5:0.5 E5:0.5 G5:0.5 G5:1"
+  },
+  {
+   "section": "interlude",
+   "chord": "G",
+   "lead": "B5:0.5 C6:0.5 C6:1 B5:2"
+  },
+  {
+   "section": "verse3",
+   "chord": "C",
+   "lead": "E5:0.5 D5:0.5 F5:0.5 G5:0.5 G5:1 G5:1",
+   "en": "Now let's sing it one more time,",
+   "hi": "Ek baar phir se gaao,",
+   "hi_tts": "एक बार फिर से गाओ,"
+  },
+  {
+   "section": "verse3",
+   "chord": "F",
+   "lead": "A5:0.5 C6:0.5 C6:0.5 C6:0.5 C6:2",
+   "en": "Faster, faster, keep the rhyme!",
+   "hi": "Tez tez, sur milao!",
+   "hi_tts": "तेज़ तेज़, सुर मिलओ!"
+  },
+  {
+   "section": "verse3",
+   "chord": "G",
+   "lead": "B5:1 C6:0.5 C6:0.5 B5:1 B5:1",
+   "en": "Alif, Alif,",
+   "hi": "Alif, Alif,",
+   "hi_tts": "अलिफ़, अलिफ़,"
+  },
+  {
+   "section": "verse3",
+   "chord": "C",
+   "lead": "C6:0.5 C6:0.5 C6:1 C6:2",
+   "en": "Everybody, feeling fine!",
+   "hi": "Sab mil kar khushi manao!",
+   "hi_tts": "सब मिल कर खुशी मनओ!"
+  },
+  {
+   "section": "chorus",
+   "chord": "C",
+   "lead": "G5:0.5 E5:0.5 C5:0.5 E5:0.5 E5:0.5 G5:0.5 G5:1",
+   "en": "Alif, Alif!",
+   "hi": "Alif, Alif!",
+   "hi_tts": "अलिफ़, अलिफ़!"
+  },
+  {
+   "section": "chorus",
+   "chord": "F",
+   "lead": "C6:0.5 A5:0.5 B5:1 C6:1 C6:1",
+   "en": "Clap your hands and sing along!",
+   "hi": "Taali bajao, saath mein gaao!",
+   "hi_tts": "ताली बजओ, साथ में गाओ!"
+  },
+  {
+   "section": "chorus",
+   "chord": "Am",
+   "lead": "G5:0.5 E5:0.5 C5:0.5 E5:0.5 E5:0.5 G5:0.5 G5:1",
+   "en": "Alif, Alif!",
+   "hi": "Alif, Alif!",
+   "hi_tts": "अलिफ़, अलिफ़!"
+  },
+  {
+   "section": "chorus",
+   "chord": "G",
+   "lead": "B5:0.5 C6:0.5 C6:1 B5:2",
+   "en": "This is our happy song!",
+   "hi": "Khushi ka gaana, sab dohraao!",
+   "hi_tts": "खुशी का गाना, सब दोह्राओ!"
+  },
+  {
+   "section": "chorus",
+   "chord": "C",
+   "lead": "G5:0.5 E5:0.5 C5:0.5 E5:0.5 E5:0.5 G5:0.5 G5:1",
+   "en": "Alif, Alif!",
+   "hi": "Alif, Alif!",
+   "hi_tts": "अलिफ़, अलिफ़!"
+  },
+  {
+   "section": "chorus",
+   "chord": "F",
+   "lead": "C6:0.5 A5:0.5 B5:1 C6:1 C6:1",
+   "en": "Clap your hands and sing along!",
+   "hi": "Taali bajao, saath mein gaao!",
+   "hi_tts": "ताली बजओ, साथ में गाओ!"
+  },
+  {
+   "section": "chorus",
+   "chord": "Am",
+   "lead": "G5:0.5 E5:0.5 C5:0.5 E5:0.5 E5:0.5 G5:0.5 G5:1",
+   "en": "Alif, Alif!",
+   "hi": "Alif, Alif!",
+   "hi_tts": "अलिफ़, अलिफ़!"
+  },
+  {
+   "section": "chorus",
+   "chord": "G",
+   "lead": "B5:0.5 C6:0.5 C6:1 B5:2",
+   "en": "This is our happy song!",
+   "hi": "Khushi ka gaana, sab dohraao!",
+   "hi_tts": "खुशी का गाना, सब दोह्राओ!"
+  },
+  {
+   "section": "ending",
+   "chord": "C",
+   "lead": "G5:0.5 E5:0.5 C5:0.5 E5:0.5 E5:0.5 G5:0.5 G5:1"
+  },
+  {
+   "section": "ending",
+   "chord": "G",
+   "lead": "B5:4"
+  }
+ ],
+ "youtube": {
+  "en": {
+   "title": "Arabic Letter Alif | Song | Islamic Songs for Kids | Deeni & Friends",
+   "description": "Arabic Letter Alif 🎵 Sing along with Deeni, Ayaan, Amira and Bubbly!\n\nToday's lesson: Learn the Arabic letter Alif.\n📖 Source: Arabic pronunciation check by teacher\n\n✨ Sing, dance and do the actions together.\n👶 Made for little Muslims aged 1–6.\n▶️ More from the series 'Arabic for Little Ones' in our playlist.\n\nDeeni & Friends: Little Hearts, Big Imaan.\n#IslamicSongsForKids #MuslimKids #NurseryRhymes",
+   "tags": [
+    "arabic letter alif",
+    "arabic for little ones",
+    "song",
+    "islamic songs for kids",
+    "muslim kids",
+    "nursery rhymes",
+    "kids songs",
+    "islamic cartoon",
+    "deeni and friends"
+   ],
+   "language": "en"
+  },
+  "hi": {
+   "title": "Arabic Harf Alif | Gaana | Bachon Ki Islamic Nazam | Deeni & Friends",
+   "description": "Arabic Harf Alif 🎵 Deeni, Ayaan, Amira aur Bubbly ke saath gaao!\n\nAaj ka sabaq: Arabic Harf Alif.\n📖 Source: Arabic pronunciation check by teacher\n\n✨ Saath mein gaao, naacho aur actions karo.\n👶 1–6 saal ke chhote Muslim bachon ke liye.\n▶️ 'Chhoton Ki Arabic' ki aur videos playlist mein.\n\nDeeni & Friends: Little Hearts, Big Imaan.\n#BachonKiNazam #IslamicNazam #UrduNazam",
+   "tags": [
+    "arabic harf alif",
+    "chhoton ki arabic",
+    "bachon ki nazam",
+    "islamic nazam for kids",
+    "urdu islamic songs",
+    "hindi islamic songs for kids",
+    "bachon ke gaane",
+    "deeni and friends"
+   ],
+   "language": "hi"
+  }
+ }
+}

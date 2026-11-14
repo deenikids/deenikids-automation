@@ -1,0 +1,434 @@
+{
+ "episode": "e0004-honesty-at-home",
+ "fps": 24,
+ "auto": true,
+ "scenes": [
+  {
+   "id": "S01",
+   "bars": [
+    0,
+    2
+   ],
+   "camera": "static",
+   "chars": [
+    {
+     "name": "deeni",
+     "x": 0.5,
+     "y": 0.62,
+     "action": "swim_in"
+    },
+    {
+     "name": "bubbly",
+     "x": 0.82,
+     "y": 0.75,
+     "action": "wave"
+    }
+   ],
+   "props": [],
+   "bg": "home",
+   "title_card": true
+  },
+  {
+   "id": "S02",
+   "bars": [
+    2,
+    6
+   ],
+   "camera": "static",
+   "chars": [
+    {
+     "name": "ayaan",
+     "x": 0.26,
+     "y": 0.7,
+     "action": "sing"
+    },
+    {
+     "name": "amira",
+     "x": 0.5,
+     "y": 0.7,
+     "action": "sing"
+    },
+    {
+     "name": "deeni",
+     "x": 0.76,
+     "y": 0.52,
+     "action": "bob"
+    }
+   ],
+   "props": [],
+   "bg": "home"
+  },
+  {
+   "id": "S03",
+   "bars": [
+    6,
+    10
+   ],
+   "camera": "beat_bounce",
+   "chars": [
+    {
+     "name": "ayaan",
+     "x": 0.16,
+     "y": 0.74,
+     "action": "dance"
+    },
+    {
+     "name": "amira",
+     "x": 0.38,
+     "y": 0.74,
+     "action": "dance"
+    },
+    {
+     "name": "deeni",
+     "x": 0.62,
+     "y": 0.62,
+     "action": "dance"
+    },
+    {
+     "name": "bubbly",
+     "x": 0.84,
+     "y": 0.76,
+     "action": "dance"
+    }
+   ],
+   "props": [],
+   "bg": "stage_green",
+   "word": {
+    "text": "Tell the Truth!",
+    "text_hi": "Sach Bolo!",
+    "arabic": null,
+    "emoji": "🤝"
+   }
+  },
+  {
+   "id": "S04",
+   "bars": [
+    10,
+    14
+   ],
+   "camera": "static",
+   "chars": [
+    {
+     "name": "bubbly",
+     "x": 0.18,
+     "y": 0.74,
+     "action": "wave"
+    },
+    {
+     "name": "amira",
+     "x": 0.84,
+     "y": 0.72,
+     "action": "sing"
+    }
+   ],
+   "props": [],
+   "bg": "kitchen",
+   "subject": {
+    "text": "Tell the Truth!",
+    "text_hi": "Sach Bolo!",
+    "arabic": null,
+    "emoji": "🤝"
+   }
+  },
+  {
+   "id": "S05",
+   "bars": [
+    14,
+    18
+   ],
+   "camera": "beat_bounce",
+   "chars": [
+    {
+     "name": "bubbly",
+     "x": 0.16,
+     "y": 0.76,
+     "action": "dance"
+    },
+    {
+     "name": "deeni",
+     "x": 0.38,
+     "y": 0.62,
+     "action": "dance"
+    },
+    {
+     "name": "amira",
+     "x": 0.62,
+     "y": 0.74,
+     "action": "dance"
+    },
+    {
+     "name": "ayaan",
+     "x": 0.84,
+     "y": 0.74,
+     "action": "dance"
+    }
+   ],
+   "props": [],
+   "bg": "stage_pink",
+   "word": {
+    "text": "Tell the Truth!",
+    "text_hi": "Sach Bolo!",
+    "arabic": null,
+    "emoji": "🤝"
+   }
+  },
+  {
+   "id": "S06",
+   "bars": [
+    18,
+    22
+   ],
+   "camera": "static",
+   "chars": [
+    {
+     "name": "bubbly",
+     "x": 0.5,
+     "y": 0.68,
+     "action": "bob"
+    },
+    {
+     "name": "ayaan",
+     "x": 0.2,
+     "y": 0.74,
+     "action": "happy"
+    },
+    {
+     "name": "amira",
+     "x": 0.8,
+     "y": 0.74,
+     "action": "happy"
+    }
+   ],
+   "props": [],
+   "bg": "home",
+   "subject": {
+    "text": "Tell the Truth!",
+    "text_hi": "Sach Bolo!",
+    "arabic": null,
+    "emoji": "🤝"
+   }
+  },
+  {
+   "id": "S07",
+   "bars": [
+    22,
+    26
+   ],
+   "camera": "beat_bounce",
+   "chars": [
+    {
+     "name": "ayaan",
+     "x": 0.16,
+     "y": 0.74,
+     "action": "dance"
+    },
+    {
+     "name": "amira",
+     "x": 0.38,
+     "y": 0.74,
+     "action": "dance"
+    },
+    {
+     "name": "deeni",
+     "x": 0.62,
+     "y": 0.62,
+     "action": "dance"
+    },
+    {
+     "name": "bubbly",
+     "x": 0.84,
+     "y": 0.76,
+     "action": "dance"
+    }
+   ],
+   "props": [],
+   "bg": "stage_green",
+   "word": {
+    "text": "Tell the Truth!",
+    "text_hi": "Sach Bolo!",
+    "arabic": null,
+    "emoji": "🤝"
+   }
+  },
+  {
+   "id": "S08",
+   "bars": [
+    26,
+    28
+   ],
+   "camera": "static",
+   "chars": [
+    {
+     "name": "bubbly",
+     "x": 0.5,
+     "y": 0.62,
+     "action": "juggle"
+    }
+   ],
+   "props": [],
+   "bg": "ocean"
+  },
+  {
+   "id": "S09",
+   "bars": [
+    28,
+    32
+   ],
+   "camera": "static",
+   "chars": [
+    {
+     "name": "ayaan",
+     "x": 0.26,
+     "y": 0.7,
+     "action": "sing"
+    },
+    {
+     "name": "amira",
+     "x": 0.5,
+     "y": 0.7,
+     "action": "sing"
+    },
+    {
+     "name": "deeni",
+     "x": 0.76,
+     "y": 0.52,
+     "action": "bob"
+    }
+   ],
+   "props": [],
+   "bg": "kitchen"
+  },
+  {
+   "id": "S10",
+   "bars": [
+    32,
+    36
+   ],
+   "camera": "beat_bounce",
+   "chars": [
+    {
+     "name": "bubbly",
+     "x": 0.16,
+     "y": 0.76,
+     "action": "dance"
+    },
+    {
+     "name": "deeni",
+     "x": 0.38,
+     "y": 0.62,
+     "action": "dance"
+    },
+    {
+     "name": "amira",
+     "x": 0.62,
+     "y": 0.74,
+     "action": "dance"
+    },
+    {
+     "name": "ayaan",
+     "x": 0.84,
+     "y": 0.74,
+     "action": "dance"
+    }
+   ],
+   "props": [],
+   "bg": "stage_pink",
+   "word": {
+    "text": "Tell the Truth!",
+    "text_hi": "Sach Bolo!",
+    "arabic": null,
+    "emoji": "🤝"
+   }
+  },
+  {
+   "id": "S11",
+   "bars": [
+    36,
+    40
+   ],
+   "camera": "beat_bounce",
+   "chars": [
+    {
+     "name": "ayaan",
+     "x": 0.16,
+     "y": 0.74,
+     "action": "dance"
+    },
+    {
+     "name": "amira",
+     "x": 0.38,
+     "y": 0.74,
+     "action": "dance"
+    },
+    {
+     "name": "deeni",
+     "x": 0.62,
+     "y": 0.62,
+     "action": "dance"
+    },
+    {
+     "name": "bubbly",
+     "x": 0.84,
+     "y": 0.76,
+     "action": "dance"
+    }
+   ],
+   "props": [],
+   "bg": "stage_green",
+   "word": {
+    "text": "Tell the Truth!",
+    "text_hi": "Sach Bolo!",
+    "arabic": null,
+    "emoji": "🤝"
+   }
+  },
+  {
+   "id": "S12",
+   "bars": [
+    40,
+    43
+   ],
+   "camera": "static",
+   "chars": [
+    {
+     "name": "ayaan",
+     "x": 0.2,
+     "y": 0.74,
+     "action": "wave"
+    },
+    {
+     "name": "amira",
+     "x": 0.4,
+     "y": 0.74,
+     "action": "wave"
+    },
+    {
+     "name": "deeni",
+     "x": 0.62,
+     "y": 0.62,
+     "action": "wave"
+    },
+    {
+     "name": "bubbly",
+     "x": 0.82,
+     "y": 0.76,
+     "action": "wave"
+    }
+   ],
+   "props": [],
+   "bg": "stage_green",
+   "end_card": true
+  }
+ ],
+ "shorts": [
+  {
+   "id": "singalong",
+   "bars": [
+    2,
+    14
+   ],
+   "title_en": "Tell the Truth! Honesty at Home Sing-Along 🎵 #shorts",
+   "title_hi": "Sach Bolo! Sach Bolna Ghar Par Saath Gaao 🎵 #shorts"
+  }
+ ]
+}

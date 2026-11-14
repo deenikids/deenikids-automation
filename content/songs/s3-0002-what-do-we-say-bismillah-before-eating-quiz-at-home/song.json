@@ -1,0 +1,156 @@
+{
+ "id": "s3-0002-what-do-we-say-bismillah-before-eating-quiz-at-home",
+ "auto": true,
+ "plan_day": 2,
+ "slot": "Short-3",
+ "series": "Shorts Originals: What Do We Say? Quiz",
+ "title_en": "What Do We Say? Bismillah Before Eating Quiz at Home",
+ "title_hi": "Kya Bolte Hain? Khaane Se Pehle Bismillah Quiz Ghar Par",
+ "lesson": "Say Bismillah before we eat",
+ "tempo_bpm": 112,
+ "transpose": 2,
+ "key": "C major (transposed)",
+ "time_signature": "4/4",
+ "religious_sources": [
+  {
+   "reference": "Sahih al-Bukhari 5376; Sahih Muslim 2022"
+  }
+ ],
+ "source_text": "Sahih al-Bukhari 5376; Sahih Muslim 2022",
+ "review": {
+  "mode": "auto",
+  "note": "Religious sources are checked against config/approved_sources.json before upload"
+ },
+ "visual": {
+  "emoji": "🍽",
+  "arabic": null
+ },
+ "word_en": "What do we say?!",
+ "word_hi": "Kya Bolein?!",
+ "bars": [
+  {
+   "section": "intro_instrumental",
+   "chord": "C",
+   "lead": "G5:1 E5:1 E5:1 E5:1"
+  },
+  {
+   "section": "chorus",
+   "chord": "C",
+   "lead": "G5:1 E5:1 E5:1 E5:1",
+   "en": "What do we say?, What do we say?!",
+   "hi": "Kya Bolein?, Kya Bolein?!",
+   "hi_tts": "क्या बोलें?, क्या बोलें?!"
+  },
+  {
+   "section": "chorus",
+   "chord": "Em",
+   "lead": "E5:1 F5:1 E5:2",
+   "en": "Clap your hands and sing along!",
+   "hi": "Taali bajao, saath mein gaao!",
+   "hi_tts": "ताली बजओ, साथ में गाओ!"
+  },
+  {
+   "section": "chorus",
+   "chord": "F",
+   "lead": "G5:1 E5:1 E5:1 E5:1",
+   "en": "What do we say?, What do we say?!",
+   "hi": "Kya Bolein?, Kya Bolein?!",
+   "hi_tts": "क्या बोलें?, क्या बोलें?!"
+  },
+  {
+   "section": "chorus",
+   "chord": "G",
+   "lead": "D5:0.5 E5:0.5 F5:1 G5:2",
+   "en": "This is our happy song!",
+   "hi": "Khushi ka gaana, sab dohraao!",
+   "hi_tts": "खुशी का गाना, सब दोह्राओ!"
+  },
+  {
+   "section": "verse1",
+   "chord": "C",
+   "lead": "E5:0.5 C5:0.5 D5:1 E5:2",
+   "en": "Say Bismillah before we eat!",
+   "hi": "Kya Bolte Hain? Khaane Se Pehle Bismillah Quiz Ghar Par!",
+   "hi_tts": "क्या बोल्ते हैं? खाने से पेह्ले बिस्मिल्लाह क्विज़ घर पर!"
+  },
+  {
+   "section": "verse1",
+   "chord": "F",
+   "lead": "F5:0.5 D5:0.5 C5:0.5 D5:0.5 C5:2",
+   "en": "We say it softly every day,",
+   "hi": "Roz isey pyaar se bolein,",
+   "hi_tts": "रोज़ इसेय प्यार से बोलें,"
+  },
+  {
+   "section": "verse1",
+   "chord": "Am",
+   "lead": "C5:1 D5:1 E5:2",
+   "en": "What do we say?, What do we say?,",
+   "hi": "Kya Bolein?, Kya Bolein?,",
+   "hi_tts": "क्या बोलें?, क्या बोलें?,"
+  },
+  {
+   "section": "verse1",
+   "chord": "G",
+   "lead": "D5:0.5 C5:0.5 E5:1 D5:2",
+   "en": "That's a lovely Muslim way!",
+   "hi": "Achhi aadat apna lein!",
+   "hi_tts": "अछी आदत अप्ना लें!"
+  },
+  {
+   "section": "chorus",
+   "chord": "C",
+   "lead": "G5:1 E5:1 E5:1 E5:1",
+   "en": "What do we say?, What do we say?!",
+   "hi": "Kya Bolein?, Kya Bolein?!",
+   "hi_tts": "क्या बोलें?, क्या बोलें?!"
+  },
+  {
+   "section": "chorus",
+   "chord": "Em",
+   "lead": "E5:1 F5:1 E5:2",
+   "en": "Clap your hands and sing along!",
+   "hi": "Taali bajao, saath mein gaao!",
+   "hi_tts": "ताली बजओ, साथ में गाओ!"
+  },
+  {
+   "section": "chorus",
+   "chord": "F",
+   "lead": "G5:1 E5:1 E5:1 E5:1",
+   "en": "What do we say?, What do we say?!",
+   "hi": "Kya Bolein?, Kya Bolein?!",
+   "hi_tts": "क्या बोलें?, क्या बोलें?!"
+  },
+  {
+   "section": "chorus",
+   "chord": "G",
+   "lead": "D5:0.5 E5:0.5 F5:1 G5:2",
+   "en": "This is our happy song!",
+   "hi": "Khushi ka gaana, sab dohraao!",
+   "hi_tts": "खुशी का गाना, सब दोह्राओ!"
+  },
+  {
+   "section": "ending",
+   "chord": "C",
+   "lead": "C6:4"
+  }
+ ],
+ "youtube": {
+  "en": {
+   "title": "What Do We Say? Bismillah Before Eating Quiz at Home",
+   "description": "What Do We Say? Bismillah Before Eating Quiz at Home",
+   "tags": [
+    ""
+   ],
+   "language": "en"
+  },
+  "hi": {
+   "title": "Kya Bolte Hain? Khaane Se Pehle Bismillah Quiz Ghar Par",
+   "description": "Kya Bolte Hain? Khaane Se Pehle Bismillah Quiz Ghar Par",
+   "tags": [
+    ""
+   ],
+   "language": "hi"
+  }
+ }
+}

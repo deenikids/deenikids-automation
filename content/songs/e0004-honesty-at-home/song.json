@@ -1,0 +1,383 @@
+{
+ "id": "e0004-honesty-at-home",
+ "auto": true,
+ "plan_day": 2,
+ "slot": "Long-B",
+ "series": "Values & Big Feelings",
+ "title_en": "Honesty at Home",
+ "title_hi": "Sach Bolna Ghar Par",
+ "lesson": "Always tell the truth",
+ "tempo_bpm": 108,
+ "transpose": 5,
+ "key": "C major (transposed)",
+ "time_signature": "4/4",
+ "religious_sources": [
+  {
+   "reference": "Sahih al-Bukhari 6094"
+  }
+ ],
+ "source_text": "Sahih al-Bukhari 6094",
+ "review": {
+  "mode": "auto",
+  "note": "Religious sources are checked against config/approved_sources.json before upload"
+ },
+ "visual": {
+  "emoji": "🤝",
+  "arabic": null
+ },
+ "word_en": "Tell the Truth!",
+ "word_hi": "Sach Bolo!",
+ "bars": [
+  {
+   "section": "intro_instrumental",
+   "chord": "C",
+   "lead": "G5:1 A5:1 G5:2"
+  },
+  {
+   "section": "intro_instrumental",
+   "chord": "Em",
+   "lead": "B5:0.5 G5:0.5 A5:1 B5:1 B5:1"
+  },
+  {
+   "section": "verse1",
+   "chord": "C",
+   "lead": "E5:0.5 G5:0.5 A5:1 G5:1 G5:1",
+   "en": "Hello friends, come sing with me,",
+   "hi": "Aao dosto, gaao saath,",
+   "hi_tts": "आओ दोस्तो, गाओ साथ,"
+  },
+  {
+   "section": "verse1",
+   "chord": "F",
+   "lead": "A5:1 G5:0.5 E5:0.5 F5:1 F5:1",
+   "en": "Today we learn about Honesty!",
+   "hi": "Aaj seekhenge Sach Bolna ki baat!",
+   "hi_tts": "आज सीखेन्गे सच बोल्ना की बात!"
+  },
+  {
+   "section": "verse1",
+   "chord": "Am",
+   "lead": "E5:0.5 F5:0.5 A5:0.5 F5:0.5 E5:0.5 F5:0.5 E5:1",
+   "en": "Ayaan and Amira, one, two, three,",
+   "hi": "Ayaan, Amira, ek do teen,",
+   "hi_tts": "अयान, अमीरा, एक दो तीन,"
+  },
+  {
+   "section": "verse1",
+   "chord": "G",
+   "lead": "G5:0.5 A5:0.5 B5:1 B5:2",
+   "en": "Deeni and Bubbly, happy as can be!",
+   "hi": "Deeni Bubbly khush aur haseen!",
+   "hi_tts": "दीनी बबली खुश और हसीन!"
+  },
+  {
+   "section": "chorus",
+   "chord": "C",
+   "lead": "G5:1 A5:1 G5:2",
+   "en": "Tell the Truth, Tell the Truth!",
+   "hi": "Sach Bolo, Sach Bolo!",
+   "hi_tts": "सच बोलो, सच बोलो!"
+  },
+  {
+   "section": "chorus",
+   "chord": "Em",
+   "lead": "B5:0.5 G5:0.5 A5:1 B5:1 B5:1",
+   "en": "Sing it with me, one, two, three!",
+   "hi": "Mere saath gaao, ek do teen!",
+   "hi_tts": "मेरे साथ गाओ, एक दो तीन!"
+  },
+  {
+   "section": "chorus",
+   "chord": "F",
+   "lead": "G5:1 A5:1 G5:2",
+   "en": "Tell the Truth, Tell the Truth!",
+   "hi": "Sach Bolo, Sach Bolo!",
+   "hi_tts": "सच बोलो, सच बोलो!"
+  },
+  {
+   "section": "chorus",
+   "chord": "G",
+   "lead": "B5:0.5 A5:0.5 C6:1 B5:2",
+   "en": "Deeni and friends sing happily!",
+   "hi": "Deeni aur dost gaayein haseen!",
+   "hi_tts": "दीनी और दोस्त गायें हसीन!"
+  },
+  {
+   "section": "verse2",
+   "chord": "C",
+   "lead": "E5:0.5 G5:0.5 A5:1 G5:1 G5:1",
+   "en": "When we're kind and when we're true,",
+   "hi": "Sach bolein aur pyaar karein,",
+   "hi_tts": "सच बोलें और प्यार करें,"
+  },
+  {
+   "section": "verse2",
+   "chord": "F",
+   "lead": "A5:1 G5:0.5 E5:0.5 F5:1 F5:1",
+   "en": "Our hearts feel happy, yours will too!",
+   "hi": "Sab ke dil khush rakhein,",
+   "hi_tts": "सब के दिल खुश रखें,"
+  },
+  {
+   "section": "verse2",
+   "chord": "Am",
+   "lead": "E5:0.5 F5:0.5 A5:0.5 F5:0.5 E5:0.5 F5:0.5 E5:1",
+   "en": "Always tell the truth!",
+   "hi": "Sach Bolna Ghar Par!",
+   "hi_tts": "सच बोल्ना घर पर!"
+  },
+  {
+   "section": "verse2",
+   "chord": "G",
+   "lead": "G5:0.5 A5:0.5 B5:1 B5:2",
+   "en": "That's what little Muslims do!",
+   "hi": "Achhe bachche yehi karein!",
+   "hi_tts": "अछे बच्चे येही करें!"
+  },
+  {
+   "section": "chorus",
+   "chord": "C",
+   "lead": "G5:1 A5:1 G5:2",
+   "en": "Tell the Truth, Tell the Truth!",
+   "hi": "Sach Bolo, Sach Bolo!",
+   "hi_tts": "सच बोलो, सच बोलो!"
+  },
+  {
+   "section": "chorus",
+   "chord": "Em",
+   "lead": "B5:0.5 G5:0.5 A5:1 B5:1 B5:1",
+   "en": "Sing it with me, one, two, three!",
+   "hi": "Mere saath gaao, ek do teen!",
+   "hi_tts": "मेरे साथ गाओ, एक दो तीन!"
+  },
+  {
+   "section": "chorus",
+   "chord": "F",
+   "lead": "G5:1 A5:1 G5:2",
+   "en": "Tell the Truth, Tell the Truth!",
+   "hi": "Sach Bolo, Sach Bolo!",
+   "hi_tts": "सच बोलो, सच बोलो!"
+  },
+  {
+   "section": "chorus",
+   "chord": "G",
+   "lead": "B5:0.5 A5:0.5 C6:1 B5:2",
+   "en": "Deeni and friends sing happily!",
+   "hi": "Deeni aur dost gaayein haseen!",
+   "hi_tts": "दीनी और दोस्त गायें हसीन!"
+  },
+  {
+   "section": "bridge",
+   "chord": "C",
+   "lead": "E5:0.5 G5:0.5 A5:1 G5:1 G5:1",
+   "en": "Once upon a time, Ayaan forgot,",
+   "hi": "Ek din Ayaan bhool gaya,",
+   "hi_tts": "एक दिन अयान भूल गया,"
+  },
+  {
+   "section": "bridge",
+   "chord": "F",
+   "lead": "A5:1 G5:0.5 E5:0.5 F5:1 F5:1",
+   "en": "Then Amira helped a lot:",
+   "hi": "Amira ne pyaar se kaha:",
+   "hi_tts": "अमीरा ने प्यार से कहा:"
+  },
+  {
+   "section": "bridge",
+   "chord": "Am",
+   "lead": "E5:0.5 F5:0.5 A5:0.5 F5:0.5 E5:0.5 F5:0.5 E5:1",
+   "en": "\"Remember: Always tell the truth!\"",
+   "hi": "\"Yaad rakho: Sach Bolna Ghar Par!\"",
+   "hi_tts": "\"याद रखो: सच बोल्ना घर पर!\""
+  },
+  {
+   "section": "bridge",
+   "chord": "G",
+   "lead": "G5:0.5 A5:0.5 B5:1 B5:2",
+   "en": "Ayaan smiled: \"Thank you a lot!\"",
+   "hi": "Ayaan bola: \"Shukriya!\"",
+   "hi_tts": "अयान बोला: \"शुक्रिया!\""
+  },
+  {
+   "section": "chorus",
+   "chord": "C",
+   "lead": "G5:1 A5:1 G5:2",
+   "en": "Tell the Truth, Tell the Truth!",
+   "hi": "Sach Bolo, Sach Bolo!",
+   "hi_tts": "सच बोलो, सच बोलो!"
+  },
+  {
+   "section": "chorus",
+   "chord": "Em",
+   "lead": "B5:0.5 G5:0.5 A5:1 B5:1 B5:1",
+   "en": "Sing it with me, one, two, three!",
+   "hi": "Mere saath gaao, ek do teen!",
+   "hi_tts": "मेरे साथ गाओ, एक दो तीन!"
+  },
+  {
+   "section": "chorus",
+   "chord": "F",
+   "lead": "G5:1 A5:1 G5:2",
+   "en": "Tell the Truth, Tell the Truth!",
+   "hi": "Sach Bolo, Sach Bolo!",
+   "hi_tts": "सच बोलो, सच बोलो!"
+  },
+  {
+   "section": "chorus",
+   "chord": "G",
+   "lead": "B5:0.5 A5:0.5 C6:1 B5:2",
+   "en": "Deeni and friends sing happily!",
+   "hi": "Deeni aur dost gaayein haseen!",
+   "hi_tts": "दीनी और दोस्त गायें हसीन!"
+  },
+  {
+   "section": "interlude",
+   "chord": "F",
+   "lead": "G5:1 A5:1 G5:2"
+  },
+  {
+   "section": "interlude",
+   "chord": "G",
+   "lead": "B5:0.5 A5:0.5 C6:1 B5:2"
+  },
+  {
+   "section": "verse3",
+   "chord": "C",
+   "lead": "E5:0.5 G5:0.5 A5:1 G5:1 G5:1",
+   "en": "Now let's sing it one more time,",
+   "hi": "Ek baar phir se gaao,",
+   "hi_tts": "एक बार फिर से गाओ,"
+  },
+  {
+   "section": "verse3",
+   "chord": "F",
+   "lead": "A5:1 G5:0.5 E5:0.5 F5:1 F5:1",
+   "en": "Faster, faster, keep the rhyme!",
+   "hi": "Tez tez, sur milao!",
+   "hi_tts": "तेज़ तेज़, सुर मिलओ!"
+  },
+  {
+   "section": "verse3",
+   "chord": "Am",
+   "lead": "E5:0.5 F5:0.5 A5:0.5 F5:0.5 E5:0.5 F5:0.5 E5:1",
+   "en": "Tell the Truth, Tell the Truth,",
+   "hi": "Sach Bolo, Sach Bolo,",
+   "hi_tts": "सच बोलो, सच बोलो,"
+  },
+  {
+   "section": "verse3",
+   "chord": "G",
+   "lead": "G5:0.5 A5:0.5 B5:1 B5:2",
+   "en": "Everybody, feeling fine!",
+   "hi": "Sab mil kar khushi manao!",
+   "hi_tts": "सब मिल कर खुशी मनओ!"
+  },
+  {
+   "section": "chorus",
+   "chord": "C",
+   "lead": "G5:1 A5:1 G5:2",
+   "en": "Tell the Truth, Tell the Truth!",
+   "hi": "Sach Bolo, Sach Bolo!",
+   "hi_tts": "सच बोलो, सच बोलो!"
+  },
+  {
+   "section": "chorus",
+   "chord": "Em",
+   "lead": "B5:0.5 G5:0.5 A5:1 B5:1 B5:1",
+   "en": "Sing it with me, one, two, three!",
+   "hi": "Mere saath gaao, ek do teen!",
+   "hi_tts": "मेरे साथ गाओ, एक दो तीन!"
+  },
+  {
+   "section": "chorus",
+   "chord": "F",
+   "lead": "G5:1 A5:1 G5:2",
+   "en": "Tell the Truth, Tell the Truth!",
+   "hi": "Sach Bolo, Sach Bolo!",
+   "hi_tts": "सच बोलो, सच बोलो!"
+  },
+  {
+   "section": "chorus",
+   "chord": "G",
+   "lead": "B5:0.5 A5:0.5 C6:1 B5:2",
+   "en": "Deeni and friends sing happily!",
+   "hi": "Deeni aur dost gaayein haseen!",
+   "hi_tts": "दीनी और दोस्त गायें हसीन!"
+  },
+  {
+   "section": "chorus",
+   "chord": "C",
+   "lead": "G5:1 A5:1 G5:2",
+   "en": "Tell the Truth, Tell the Truth!",
+   "hi": "Sach Bolo, Sach Bolo!",
+   "hi_tts": "सच बोलो, सच बोलो!"
+  },
+  {
+   "section": "chorus",
+   "chord": "Em",
+   "lead": "B5:0.5 G5:0.5 A5:1 B5:1 B5:1",
+   "en": "Sing it with me, one, two, three!",
+   "hi": "Mere saath gaao, ek do teen!",
+   "hi_tts": "मेरे साथ गाओ, एक दो तीन!"
+  },
+  {
+   "section": "chorus",
+   "chord": "F",
+   "lead": "G5:1 A5:1 G5:2",
+   "en": "Tell the Truth, Tell the Truth!",
+   "hi": "Sach Bolo, Sach Bolo!",
+   "hi_tts": "सच बोलो, सच बोलो!"
+  },
+  {
+   "section": "chorus",
+   "chord": "G",
+   "lead": "B5:0.5 A5:0.5 C6:1 B5:2",
+   "en": "Deeni and friends sing happily!",
+   "hi": "Deeni aur dost gaayein haseen!",
+   "hi_tts": "दीनी और दोस्त गायें हसीन!"
+  },
+  {
+   "section": "ending",
+   "chord": "C",
+   "lead": "G5:1 A5:1 G5:2"
+  },
+  {
+   "section": "ending",
+   "chord": "G",
+   "lead": "B5:4"
+  }
+ ],
+ "youtube": {
+  "en": {
+   "title": "Honesty at Home | Story + Song | Islamic Songs for Kids | Deeni & Friends",
+   "description": "Honesty at Home 🎵 Sing along with Deeni, Ayaan, Amira and Bubbly!\n\nToday's lesson: Always tell the truth.\n📖 Source: Sahih al-Bukhari 6094\n\n✨ Sing, dance and do the actions together.\n👶 Made for little Muslims aged 1–6.\n▶️ More from the series 'Values & Big Feelings' in our playlist.\n\nDeeni & Friends: Little Hearts, Big Imaan.\n#IslamicSongsForKids #MuslimKids #NurseryRhymes",
+   "tags": [
+    "honesty at home",
+    "values & big feelings",
+    "story + song",
+    "islamic songs for kids",
+    "muslim kids",
+    "nursery rhymes",
+    "kids songs",
+    "islamic cartoon",
+    "deeni and friends"
+   ],
+   "language": "en"
+  },
+  "hi": {
+   "title": "Sach Bolna Ghar Par | Kahani + Gaana | Bachon Ki Islamic Nazam | Deeni & Friends",
+   "description": "Sach Bolna Ghar Par 🎵 Deeni, Ayaan, Amira aur Bubbly ke saath gaao!\n\nAaj ka sabaq: Sach Bolna Ghar Par.\n📖 Source: Sahih al-Bukhari 6094\n\n✨ Saath mein gaao, naacho aur actions karo.\n👶 1–6 saal ke chhote Muslim bachon ke liye.\n▶️ 'Achhi Aadatein' ki aur videos playlist mein.\n\nDeeni & Friends: Little Hearts, Big Imaan.\n#BachonKiNazam #IslamicNazam #UrduNazam",
+   "tags": [
+    "sach bolna ghar par",
+    "achhi aadatein",
+    "bachon ki nazam",
+    "islamic nazam for kids",
+    "urdu islamic songs",
+    "hindi islamic songs for kids",
+    "bachon ke gaane",
+    "deeni and friends"
+   ],
+   "language": "hi"
+  }
+ }
+}

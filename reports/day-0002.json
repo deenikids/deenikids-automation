@@ -1,0 +1,33 @@
+{
+  "day": 2,
+  "date": "2027-01-05",
+  "items": [
+    {
+      "slot": "Long-A",
+      "song_id": "e0003-arabic-letter-alif",
+      "built": true,
+      "qc": true,
+      "source": "Arabic pronunciation check by teacher",
+      "source_approved": true,
+      "uploaded": false
+    },
+    {
+      "slot": "Long-B",
+      "song_id": "e0004-honesty-at-home",
+      "built": true,
+      "qc": true,
+      "source": "Sahih al-Bukhari 6094",
+      "source_approved": false,
+      "uploaded": false
+    },
+    {
+      "slot": "Short-3",
+      "song_id": "s3-0002-what-do-we-say-bismillah-before-eating-quiz-at-home",
+      "built": true,
+      "qc": true,
+      "source": "Sahih al-Bukhari 5376; Sahih Muslim 2022",
+      "source_approved": true,
+      "uploaded": false
+    }
+  ]
+}

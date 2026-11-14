@@ -1,0 +1,1 @@
+- Day 2 Long-B `e0004-honesty-at-home`: add "Sahih al-Bukhari 6094" to config/approved_sources.json after checking it
