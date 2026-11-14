@@ -14,7 +14,7 @@ import traceback
 
 IN = sorted(glob.glob("/kaggle/input/*"))[0]
 OUT = "/kaggle/working/out"
-ACE = "/kaggle/working/ace"
+ACE = "/tmp/ace"  # not in /kaggle/working: everything there is downloaded back as output
 os.makedirs(OUT, exist_ok=True)
 
 if os.environ.get("DEENI_INNER") != "1":
@@ -27,7 +27,7 @@ if os.environ.get("DEENI_INNER") != "1":
         run(f"git clone --depth 1 https://github.com/ACE-Step/ACE-Step-1.5.git {ACE}")
     run("pip install -q uv")
     run(f"cd {ACE} && uv sync")
-    me = "/kaggle/working/sing_inner.py"
+    me = "/tmp/sing_inner.py"
     shutil.copy(os.path.abspath(__file__), me)
     env = dict(os.environ, DEENI_INNER="1")
     sys.exit(subprocess.run(f"cd {ACE} && uv run python {me}", shell=True, env=env).returncode)
@@ -63,7 +63,7 @@ for j in jobs:
                     bpm=j["bpm"], keyscale=j.get("keyscale", "C Major"), duration=j["duration"], seed=j["seed"],
                     inference_steps=8, audio_cover_strength=0.85)
                 cfg = GenerationConfig(batch_size=1, use_random_seed=False)
-                tmp = f"/kaggle/working/tmp/{j['id']}_{lang}"
+                tmp = f"/tmp/gen/{j['id']}_{lang}"
                 res = generate_music(dit, llm, params, cfg, save_dir=tmp)
                 if res.success and res.audios:
                     src = res.audios[0]["path"]

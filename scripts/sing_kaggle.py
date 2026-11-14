@@ -128,7 +128,7 @@ def main(song_ids):
             break
     got = os.path.join(work, "got")
     os.makedirs(got)
-    sh(f'kaggle kernels output {user}/deeni-sing -p "{got}"', check=False)
+    sh(f'timeout 600 kaggle kernels output {user}/deeni-sing -p "{got}"', check=False)
     if "complete" not in status:
         print(f"Kaggle run did not complete ({status.strip()}): using the normal AI voice.")
         for lf in glob.glob(os.path.join(got, "**", "*.log"), recursive=True) + glob.glob(os.path.join(got, "**", "log*.json"), recursive=True):
