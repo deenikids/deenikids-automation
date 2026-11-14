@@ -12,7 +12,9 @@ import subprocess
 import sys
 import traceback
 
-IN = sorted(glob.glob("/kaggle/input/*"))[0]
+_jobs = sorted(glob.glob("/kaggle/input/**/jobs.json", recursive=True))  # Kaggle nests datasets (e.g. /kaggle/input/datasets/<user>/<slug>/)
+IN = os.path.dirname(_jobs[0]) if _jobs else sorted(glob.glob("/kaggle/input/*"))[0]
+print("Input folder:", IN, flush=True)
 OUT = "/kaggle/working/out"
 ACE = "/tmp/ace"  # not in /kaggle/working: everything there is downloaded back as output
 os.makedirs(OUT, exist_ok=True)
