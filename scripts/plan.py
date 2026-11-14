@@ -5,9 +5,6 @@ The same code builds the planning spreadsheet AND tells the daily GitHub workflo
 """
 import datetime as dt
 
-from openpyxl import Workbook
-from openpyxl.styles import Alignment, Font, PatternFill
-from openpyxl.utils import get_column_letter
 
 from plan_data import *  # noqa
 
@@ -320,6 +317,11 @@ def build_rows():
 
 
 def main(path):
+    # spreadsheet export only (not needed for the daily run)
+    from openpyxl import Workbook
+    from openpyxl.styles import Alignment, Font, PatternFill
+    from openpyxl.utils import get_column_letter
+
     rows = build_rows()
     wb = Workbook()
     fill = PatternFill("solid", fgColor="DDEFE4")
