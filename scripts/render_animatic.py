@@ -353,6 +353,25 @@ def place(x, y):
     return x, y
 
 
+LYRIC_MOVES = [  # (words in the English line, pose). First match wins; kids copy what the words say.
+    (("clap",), "clap"), (("jump", "hop", "bounce"), "jump"), (("wave", "hello", "salaam", "salam", "goodbye"), "wave"),
+    (("dua", "pray", "thank", "alhamdulillah", "ask allah", "ameen"), "dua"), (("wash", "wudu", "clean", "scrub"), "wash"),
+    (("yay", "hooray", "happy", "love", "smile", "eid"), "happy"), (("dance", "spin", "tap", "stomp", "shake", "sing"), "dance"),
+]
+
+
+def lyric_move(bar):
+    """Pose suggested by the words being sung in this bar, or None."""
+    bars = G["song"]["bars"]
+    if bar >= len(bars):
+        return None
+    line = (bars[bar].get("en") or "").lower()
+    for words, pose in LYRIC_MOVES:
+        if any(w in line for w in words):
+            return pose
+    return None
+
+
 def draw_character(d, ch, scene, t, ts, beat_phase, bar):
     W, H = G["W"] * SS, G["H"] * SS
     bs = G["bs"]
@@ -384,6 +403,14 @@ def draw_character(d, ch, scene, t, ts, beat_phase, bar):
         start = -0.15 if act == "walk_in_left" else 1.15
         x = start + (x - start) * f
         dy = -abs(math.sin(t * 10)) * 0.015 if f < 0.98 else 0.0
+    if ch["name"] in ("ayaan", "amira") and act in ("idle", "bob", "sing", "dance", "happy", "wave") and scene.get("camera") != "slow_push_in":
+        move = lyric_move(bar)  # the children act out the words (not in calm lullabies)
+        if move:
+            pose = move
+            if move == "jump":
+                dy = -abs(math.sin(math.pi * beat_phase)) * 0.075
+            elif move in ("clap", "dance", "happy"):
+                dy = -abs(math.sin(math.pi * beat_phase)) * 0.03
     sing_bars = ch.get("sing_bars")
     sings = act != "juggle" and (sing_bars is None or sing_bars[0] <= bar < sing_bars[1])
     blink = ((t + x * 1.7) % 3.3) < 0.13
@@ -416,8 +443,13 @@ def draw_subtitle(d, t, bar):
     pad = size * 0.45
     d.rounded_rectangle([W / 2 - tw / 2 - pad, y - size * 0.75, W / 2 + tw / 2 + pad, y + size * 0.7], radius=size * 0.5, fill=(30, 42, 74))
     text(d, (W / 2, y), line, size, (255, 255, 255))
-    # bouncing progress ball over the line
     f = (t - bar * G["bs"]) / G["bs"]
+    # karaoke: words already sung turn yellow, so children can follow and read along
+    words = line.split(" ")
+    done = " ".join(words[:max(0, min(len(words), int(f * len(words) + 0.999)))])
+    if done:
+        text(d, (W / 2 - tw / 2, y), done, size, (255, 214, 80), anchor="lm")
+    # bouncing progress ball over the line
     bx = W / 2 - tw / 2 + tw * f
     by = y - size * 0.95 - abs(math.sin(math.pi * 4 * f)) * size * 0.4
     d.ellipse([bx - size * 0.16, by - size * 0.16, bx + size * 0.16, by + size * 0.16], fill=(255, 214, 80), outline=(30, 42, 74), width=3)
@@ -475,6 +507,58 @@ def draw_words(d, scene, ts, beat_phase, bar, frame=None):
         text(d, (W / 2, top + H * 0.29), G["settings"]["tagline"], H * (0.035 if G["vertical"] else 0.06) * max(0.01, f), (255, 255, 255), (30, 42, 74))
 
 
+# ----------------------------------------------------------------------------- sparkle, notes, confetti (1x overlay)
+CONFETTI = [(255, 99, 132), (255, 214, 80), (80, 200, 255), (120, 220, 140), (190, 140, 255), (255, 160, 80)]
+
+
+def _rand(k):
+    x = math.sin(k * 127.1 + 311.7) * 43758.5453
+    return x - math.floor(x)
+
+
+def draw_note(d, x, y, s, col):
+    d.ellipse([x - s * 0.5, y - s * 0.35, x + s * 0.5, y + s * 0.35], fill=col, outline=(30, 42, 74), width=max(2, int(s * 0.12)))
+    d.line([x + s * 0.45, y, x + s * 0.45, y - s * 1.7], fill=(30, 42, 74), width=max(3, int(s * 0.22)))
+    d.polygon([(x + s * 0.45, y - s * 1.7), (x + s * 1.3, y - s * 1.25), (x + s * 0.45, y - s * 1.0)], fill=col, outline=(30, 42, 74))
+
+
+def draw_fx(d, scene, t, ts, beat_phase, bar):
+    """Movement that never stops: floating notes, twinkling stars, and confetti in every chorus."""
+    W, H = G["W"], G["H"]
+    calm = scene.get("camera") == "slow_push_in"
+    top, bottom = (H * 0.14, H * 0.7) if G["vertical"] else (H * 0.04, H * 0.8)
+    bars = G["song"]["bars"]
+    singing = bar < len(bars) and bool(bars[bar].get(G["lang"]))
+    # twinkling stars (more of them, slower, in lullabies)
+    for k in range(14 if calm else 9):
+        x = _rand(k) * W
+        y = top + _rand(k + 50) * (bottom - top) * 0.55
+        tw = (math.sin(t * (1.3 if calm else 3.0) + k * 1.7) + 1) / 2
+        if tw > 0.25:
+            star(d, x, y, H * 0.012 * (0.5 + tw), (255, 255, 255) if k % 2 else (255, 236, 150), points=4, inner=0.35)
+    if calm:
+        return
+    # music notes drift up while someone is singing
+    if singing:
+        for k in range(7):
+            life = ((t * 0.28 + _rand(k + 9)) % 1.0)
+            x = (0.06 + _rand(k + 20) * 0.88) * W + math.sin(t * 2 + k) * W * 0.015
+            y = bottom - life * (bottom - top) * 0.9
+            s = H * 0.016 * (1 + 0.25 * math.sin(math.pi * beat_phase))
+            if 0.05 < life < 0.92:
+                draw_note(d, x, y, s, CONFETTI[k % len(CONFETTI)])
+    # confetti rains through every chorus
+    section = bars[bar].get("section") if bar < len(bars) else ""
+    if section == "chorus" or scene.get("end_card"):
+        for k in range(46):
+            speed = 0.22 + _rand(k + 3) * 0.25
+            life = (t * speed + _rand(k + 77)) % 1.0
+            x = _rand(k + 130) * W + math.sin(t * 3 + k) * W * 0.02
+            y = -H * 0.05 + life * H * 1.05
+            w, h = H * 0.012, H * 0.02 * abs(math.cos(t * 6 + k)) + 2
+            d.rectangle([x - w, y - h, x + w, y + h], fill=CONFETTI[k % len(CONFETTI)])
+
+
 # ----------------------------------------------------------------------------- frame
 def scene_at(bar):
     for sc in G["storyboard"]["scenes"]:
@@ -514,6 +598,7 @@ def render_frame(i):
     x0, y0 = (W - cw) / 2, (H - chh) * 0.4
     frame = img.resize((G["W"], G["H"]), Image.BILINEAR, box=(x0, y0, x0 + cw, y0 + chh), reducing_gap=2.0)
     fd = ImageDraw.Draw(frame)
+    draw_fx(fd, scene, t, ts, beat_phase, bar)
     draw_words(fd, scene, ts, beat_phase, bar, frame)
     draw_subtitle(fd, t, bar)
     if G["vertical"] and G.get("short_title") and t - G["t0"] < 3.0:

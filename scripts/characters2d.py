@@ -137,6 +137,15 @@ def _kid_arms(st, t):
     if pose == "wash":
         k = math.sin(t * 14) * 0.25
         return 0.9 + k, -0.9 - k
+    if pose == "clap":  # hands meet in front on every beat
+        k = abs(math.sin(t * math.pi * st.get("bps", 1.8)))
+        return 1.15 + k * 0.75, -1.15 - k * 0.75
+    if pose == "jump":  # both arms straight up
+        k = math.sin(t * 10) * 0.12
+        return -2.75 - k, 2.75 + k
+    if pose == "dua":  # hands raised in front, palms up
+        k = math.sin(t * 2) * 0.05
+        return 1.45 + k, -1.45 - k
     if pose == "happy":  # "yay!" arms up and out
         k = math.sin(t * 6) * 0.15
         return -2.3 - k, 2.3 + k
