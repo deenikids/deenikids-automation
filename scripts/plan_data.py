@@ -16,16 +16,16 @@ DUAS = [
     ("Mentioning Allah When Entering the House", "Ghar Mein Aate Waqt Allah Ka Naam", "Back Home!", "Ghar Aa Gaye!", "Say Bismillah when we come home", "Sahih Muslim 2018"),
     ("Dua Before Entering the Toilet", "Bathroom Jaane Ki Dua", "Toilet Dua", "Bathroom Dua", "Say the dua before the toilet", "Sahih al-Bukhari 142; Sahih Muslim 375"),
     ("Dua After Leaving the Toilet", "Bathroom Se Nikalne Ki Dua", "Ghufranak!", "Ghufranak!", "Say Ghufranak after the toilet", "Sunan Abi Dawud 30; Jami at-Tirmidhi 7"),
-    ("Dua for Wearing Clothes", "Kapde Pehenne Ki Dua", "New Clothes!", "Naye Kapde!", "Thank Allah for our clothes", "Sunan Abi Dawud 4023 (check grading)"),
+    ("Dua for Wearing Clothes", "Kapde Pehenne Ki Dua", "New Clothes!", "Naye Kapde!", "Thank Allah for our clothes", "Sunan Abi Dawud 4023"),
     ("Dua for Entering the Masjid", "Masjid Mein Jaane Ki Dua", "Masjid Time!", "Masjid Chalo!", "Say the dua entering the masjid", "Sahih Muslim 713"),
     ("Dua for Leaving the Masjid", "Masjid Se Nikalne Ki Dua", "Bye Masjid", "Masjid Se Bahar", "Say the dua leaving the masjid", "Sahih Muslim 713"),
     ("When We Sneeze: Alhamdulillah", "Chheenk Aaye To Alhamdulillah", "Achoo!", "Aachhoo!", "Say Alhamdulillah when we sneeze", "Sahih al-Bukhari 6224"),
-    ("Drinking Water in Three Sips", "Teen Saans Mein Paani", "Glug Glug!", "Glug Glug!", "Drink in three sips with Bismillah", "Sahih Muslim 2028"),
+    ("Drinking Water in Three Sips", "Teen Saans Mein Paani", "Glug Glug!", "Glug Glug!", "Drink slowly in three sips", "Sahih Muslim 2028"),
     ("Dua for Riding in a Car", "Gaadi Mein Baithne Ki Dua", "Car Dua!", "Safar Ki Dua", "Say the travel dua in the car", "Quran 43:13-14; Sahih Muslim 1342"),
     ("Dua When It Rains", "Baarish Ki Dua", "Rain Rain!", "Baarish!", "Ask Allah for good rain", "Sahih al-Bukhari 1032"),
     ("Saying InshaAllah", "InshaAllah Kehna", "InshaAllah!", "InshaAllah!", "Say InshaAllah for things we plan", "Quran 18:23-24"),
     ("Saying MashaAllah", "MashaAllah Kehna", "MashaAllah!", "MashaAllah!", "Say MashaAllah when we like something", "Quran 18:39"),
-    ("Saying SubhanAllah", "SubhanAllah Kehna", "SubhanAllah!", "SubhanAllah!", "Say SubhanAllah when we see Allah's creation", "Sahih al-Bukhari 6406"),
+    ("Saying SubhanAllah", "SubhanAllah Kehna", "SubhanAllah!", "SubhanAllah!", "Say SubhanAllah when we see Allah's creation", "Quran 3:190-191; Sahih al-Bukhari 6406"),
     ("Saying Astaghfirullah", "Astaghfirullah Kehna", "Sorry Allah", "Astaghfirullah", "Say Astaghfirullah when we make a mistake", "Sahih al-Bukhari 6307"),
     ("Saying JazakAllahu Khayran", "JazakAllah Khair Kehna", "Thank You!", "JazakAllah!", "Thank people with JazakAllahu khayran", "Jami at-Tirmidhi 2035"),
     ("When I Feel Angry: A'udhu Billah", "Gussa Aaye To A'udhu Billah", "Calm Down!", "Gussa Nahi!", "Seek refuge in Allah when angry", "Sahih al-Bukhari 3282"),
@@ -74,7 +74,7 @@ VALUES = [
     ("Tidying Up", "Safai Karna", "Clean Up!", "Safai!", "Put our toys away", "Sahih Muslim 223"),
     ("Being a Good Neighbour", "Achha Padosi", "Hello Neighbour!", "Padosi!", "Be kind to neighbours", "Sahih al-Bukhari 6014"),
     ("Big Feelings: Angry", "Jab Gussa Aaye", "So Angry!", "Gussa!", "What to do when we feel angry", "Sahih al-Bukhari 3282"),
-    ("Big Feelings: Sad", "Jab Udaas Ho", "Feeling Sad", "Udaas?", "Allah is with us when we are sad", "Quran 94:5-6"),
+    ("Big Feelings: Sad", "Jab Udaas Ho", "Feeling Sad", "Udaas?", "Allah is with us when we are sad", "Quran 9:40; Quran 94:5-6"),
     ("Big Feelings: Scared", "Jab Darr Lage", "Scared?", "Darr Lage?", "Say A'udhu billah and feel safe", "Quran 113-114"),
     ("Big Feelings: Jealous", "Jab Jalan Ho", "Not Fair!", "Jalan?", "Be happy for others", "Sahih al-Bukhari 13"),
     ("Trying New Things", "Kuch Naya Try Karo", "I Can Try!", "Try Karo!", "Try new things with Bismillah", NO_SRC),
@@ -85,7 +85,7 @@ VALUES = [
     ("Kind Words", "Meethe Bol", "Kind Words!", "Meethe Bol!", "A good word is charity", "Sahih al-Bukhari 2989"),
     ("Giving Charity", "Sadqa Dena", "Give!", "Sadqa!", "Give to people in need", "Quran 2:261"),
     ("Visiting Grandparents", "Nana Nani Se Milna", "Nani & Nana!", "Nana Nani!", "Love and visit our family", "Quran 17:23"),
-    ("Respecting Teachers", "Ustaad Ki Izzat", "My Teacher!", "Ustaad Ji!", "Respect people who teach us", "Sahih Muslim 2699"),
+    ("Respecting Teachers", "Ustaad Ki Izzat", "My Teacher!", "Ustaad Ji!", "Respect people who teach us", "Sunan Abi Dawud 4843; Jami at-Tirmidhi 1920"),
     ("Caring for Plants", "Paudhon Ka Khayal", "Grow Grow!", "Paudha!", "Planting is a good deed", "Sahih al-Bukhari 2320"),
     ("Including Everyone", "Sab Ko Saath Khilao", "Play Together!", "Saath Khelo!", "Let everyone play", NO_SRC),
 ]
@@ -121,7 +121,7 @@ PRESCHOOL = (
     [(f"Allah Made the {e}", f"Allah Ne Banaya {h}", f"{e}!", f"{h}!", f"Learn about the {e.lower()}", CREATOR) for e, h in ANIMALS] +
     [(f"Yummy Fruits: {e}", f"Mazedaar Phal: {h}", f"{e}!", f"{h}!", f"Learn about {e.lower()}", CREATOR) for e, h in FRUITS] +
     [(f"Healthy Vegetables: {e}", f"Sehatmand Sabzi: {h}", f"{e}!", f"{h}!", f"Learn about {e.lower()}", CREATOR) for e, h in VEG] +
-    [(f"My Body: {e}", f"Mera Jism: {h}", f"{e}!", f"{h}!", f"Allah gave us {e.lower()}", "Quran 16:78") for e, h in BODY] +
+    [(f"My Body: {e}", f"Mera Jism: {h}", f"{e}!", f"{h}!", f"Allah gave us {e.lower()}", "Quran 16:78; Quran 95:4") for e, h in BODY] +
     [(f"Weather: {e}", f"Mausam: {h}", f"{e}!", f"{h}!", f"Learn about a {e.lower()}", CREATOR) for e, h in WEATHER] +
     [(e, h, f"{e}!", f"{h}!", f"Learn about {e.lower()}", CREATOR) for e, h in NATURE] +
     [(f"Vehicles: {e}", f"Gaadiyan: {h}", f"{e}!", f"{h}!", f"Learn about the {e.lower()}", NO_SRC) for e, h in VEHICLES] +
@@ -164,7 +164,7 @@ BASICS = (
     [(f"Allah's Beautiful Name: {n}", f"Allah Ka Pyaara Naam: {n}", n, n, f"Learn Allah's name {n}", "Quran 7:180") for n in NAMES] +
     [(e, h, t, th, l, s) for e, h, t, th, l, s in [
         ("Facing the Qibla", "Qibla Ki Taraf", "Qibla!", "Qibla!", "We face the Kaaba when we pray", "Quran 2:144"),
-        ("My Prayer Mat", "Meri Jaa-Namaz", "Prayer Mat!", "Jaa-Namaz!", "Keep our prayer place clean", "Quran 7:31"),
+        ("My Prayer Mat", "Meri Jaa-Namaz", "Prayer Mat!", "Jaa-Namaz!", "Keep our prayer place clean", "Quran 2:125; Sahih Muslim 223"),
         ("Standing in Prayer", "Namaz Mein Khade Hona", "Stand Tall!", "Qiyaam!", "Learn how we stand in salah", "Sahih al-Bukhari 757"),
         ("Bowing in Prayer: Ruku", "Ruku Karna", "Ruku!", "Ruku!", "Learn how we bow in salah", "Sahih al-Bukhari 757"),
         ("Prostrating in Prayer: Sujood", "Sajda Karna", "Sujood!", "Sajda!", "Learn how we prostrate in salah", "Sahih al-Bukhari 757"),
@@ -235,7 +235,7 @@ RAMADAN = [("Welcome Ramadan!", "Ramzan Mubarak!", "Quran 2:185"), ("Spotting th
            ("Moon Sighting for Eid", "Eid Ka Chaand", "Sahih al-Bukhari 1909"), ("Making Eid Cards", "Eid Card Banao", NO_SRC),
            ("Sharing Sweets", "Mithai Baanto", NO_SRC), ("Goodbye Ramadan", "Alvida Ramzan", NO_SRC), ("My Ramadan Diary", "Meri Ramzan Diary", NO_SRC)]
 HAJJ = [("Dhul Hijjah: The 10 Best Days", "Zul Hijjah Ke 10 Din", "Sahih al-Bukhari 969"), ("The Hajj Song", "Hajj Ka Gaana", "Quran 3:97"),
-        ("Ihram: The White Clothes", "Ehram Ke Safed Kapde", "Sahih al-Bukhari 1838"), ("Going Around the Kaaba", "Kaaba Ka Tawaf", "Quran 22:29"),
+        ("Ihram: The White Clothes", "Ehram Ke Safed Kapde", "Sahih al-Bukhari 1838; Jami at-Tirmidhi 994"), ("Going Around the Kaaba", "Kaaba Ka Tawaf", "Quran 22:29"),
         ("Safa and Marwa", "Safa Aur Marwa", "Quran 2:158"), ("Zamzam Water", "Aab-e-Zamzam", "Sahih Muslim 2473"),
         ("The Day of Arafah", "Arafah Ka Din", "Sahih Muslim 1162"), ("The Takbeer Song", "Takbeer Ka Gaana", "Quran 22:28"),
         ("Qurbani Explained Gently", "Qurbani Ki Kahani", "Quran 22:36")]
@@ -252,7 +252,7 @@ SUNNAHS = [("Smile at Others", "Muskurao", "Jami at-Tirmidhi 1956"), ("Say Salaa
            ("Use Your Right Hand", "Seedha Haath", "Sahih al-Bukhari 5376"), ("Use the Miswak", "Miswak Karo", "Sahih al-Bukhari 887"),
            ("Sit to Drink", "Baith Ke Piyo", "Sahih Muslim 2024"), ("Sleep on Your Right Side", "Daayin Karwat Soyo", "Sahih al-Bukhari 247"),
            ("Say Bismillah First", "Pehle Bismillah", "Sahih al-Bukhari 5376"), ("Help at Home", "Ghar Mein Madad", "Sahih al-Bukhari 676"),
-           ("Give Gifts", "Tohfa Do", "Al-Adab Al-Mufrad 594 (check grading)"), ("Be Kind to Animals", "Jaanwaron Par Reham", "Sahih al-Bukhari 2363"),
+           ("Give Gifts", "Tohfa Do", "Al-Adab Al-Mufrad 594"), ("Be Kind to Animals", "Jaanwaron Par Reham", "Sahih al-Bukhari 2363"),
            ("Plant a Tree", "Ped Lagao", "Sahih al-Bukhari 2320"), ("Say a Good Word", "Achhi Baat Kaho", "Sahih al-Bukhari 2989")]
 COUNT_OBJECTS = [("Dates", "Khajoor"), ("Stars", "Taare"), ("Bubbles", "Bulbule"), ("Fish", "Machhliyan"), ("Apples", "Seb"),
                  ("Balloons", "Gubbare"), ("Ducks", "Batakh"), ("Shells", "Seepiyan"), ("Cars", "Gaadiyan"), ("Flowers", "Phool"),
