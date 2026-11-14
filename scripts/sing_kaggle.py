@@ -126,12 +126,16 @@ def main(song_ids):
         status = sh(f"kaggle kernels status {user}/deeni-sing", check=False).stdout.lower()
         if "complete" in status or "error" in status or "cancel" in status:
             break
-    if "complete" not in status:
-        print(f"Kaggle run did not complete ({status.strip()}): using the normal AI voice.")
-        return 0
     got = os.path.join(work, "got")
     os.makedirs(got)
     sh(f'kaggle kernels output {user}/deeni-sing -p "{got}"', check=False)
+    if "complete" not in status:
+        print(f"Kaggle run did not complete ({status.strip()}): using the normal AI voice.")
+        for lf in glob.glob(os.path.join(got, "**", "*.log"), recursive=True) + glob.glob(os.path.join(got, "**", "log*.json"), recursive=True):
+            txt = open(lf, encoding="utf-8", errors="replace").read()
+            print(f"----- Kaggle log {os.path.basename(lf)} (last 6000 chars) -----")
+            print(txt[-6000:])
+        return 0
     for sid in song_ids:
         song = load_song(sid)
         target = song_length_sec(song)
