@@ -31,7 +31,7 @@ if os.environ.get("DEENI_INNER") != "1":
     run(f"cd {ACE} && uv sync")
     me = "/tmp/sing_inner.py"
     shutil.copy(os.path.abspath(__file__), me)
-    env = dict(os.environ, DEENI_INNER="1")
+    env = dict(os.environ, DEENI_INNER="1", ACESTEP_DTYPE="float32")  # T4 is pre-Ampere: float16 overflows to NaN
     sys.exit(subprocess.run(f"cd {ACE} && uv run python {me}", shell=True, env=env).returncode)
 
 sys.path.insert(0, ACE)
