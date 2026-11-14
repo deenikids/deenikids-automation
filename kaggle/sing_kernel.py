@@ -27,6 +27,13 @@ if os.environ.get("DEENI_INNER") != "1":
         subprocess.run(cmd, shell=True, check=True)
     if not os.path.isdir(ACE):
         run(f"git clone --depth 1 https://github.com/ACE-Step/ACE-Step-1.5.git {ACE}")
+    # T4 (pre-Ampere) has no bfloat16, so ACE-Step falls back to float16, which overflows to NaN in the DiT
+    # (its own error says so). This release ignores ACESTEP_DTYPE, so switch that one choice to float32.
+    orch = os.path.join(ACE, "acestep/core/generation/handler/init_service_orchestrator.py")
+    src = open(orch).read()
+    if "self.dtype = torch.float16\n" in src:
+        open(orch, "w").write(src.replace("self.dtype = torch.float16\n", "self.dtype = torch.float32  # deeni: T4 float16 gives NaN\n", 1))
+        print("Patched ACE-Step DiT dtype to float32", flush=True)
     run("pip install -q uv")
     run(f"cd {ACE} && uv sync")
     me = "/tmp/sing_inner.py"
