@@ -62,27 +62,35 @@ jobs = json.load(open(os.path.join(IN, "jobs.json"), encoding="utf-8"))
 log = []
 for j in jobs:
     for lang, lyrics in j["lyrics"].items():
-        dest_stub = os.path.join(OUT, f"{j['id']}_{lang}")
-        ok = False
-        for vocal_lang in ([lang, "unknown"] if lang != "en" else ["en"]):
-            try:
-                params = GenerationParams(
-                    task_type="cover", src_audio=os.path.join(IN, f"{j['id']}.wav"),
-                    caption=CAPTION_LULLABY if j.get("calm") else CAPTION, lyrics=lyrics, vocal_language=vocal_lang,
-                    bpm=j["bpm"], keyscale=j.get("keyscale", "C Major"), duration=j["duration"], seed=j["seed"],
-                    inference_steps=8, audio_cover_strength=0.85)
-                cfg = GenerationConfig(batch_size=1, use_random_seed=False)
-                tmp = f"/tmp/gen/{j['id']}_{lang}"
-                res = generate_music(dit, llm, params, cfg, save_dir=tmp)
-                if res.success and res.audios:
-                    src = res.audios[0]["path"]
-                    shutil.copy(src, dest_stub + os.path.splitext(src)[1])
-                    ok = True
-                    break
-                log.append(f"{j['id']} {lang} ({vocal_lang}): {getattr(res, 'error', 'no audio')}")
-            except Exception:
-                log.append(f"{j['id']} {lang} ({vocal_lang}): {traceback.format_exc()[-800:]}")
-        log.append(f"{j['id']} {lang}: {'OK' if ok else 'FAILED'}")
+        # Cover strength: high values copy our (voice-less) backing track and no one sings; low values sing but
+        # drift from our melody. Make one candidate at each strength; the checker on GitHub keeps the first whose
+        # words can be understood and whose length matches.
+        for strength in (0.5, 0.25):
+            dest_stub = os.path.join(OUT, f"{j['id']}_{lang}.s{int(strength * 100):02d}")
+            ok = False
+            for vocal_lang in ([lang, "unknown"] if lang != "en" else ["en"]):
+                try:
+                    import gc
+                    import torch
+                    gc.collect()
+                    torch.cuda.empty_cache()  # float32 on a 15 GB T4 runs out of memory without this
+                    params = GenerationParams(
+                        task_type="cover", src_audio=os.path.join(IN, f"{j['id']}.wav"),
+                        caption=CAPTION_LULLABY if j.get("calm") else CAPTION, lyrics=lyrics, vocal_language=vocal_lang,
+                        bpm=j["bpm"], keyscale=j.get("keyscale", "C Major"), duration=j["duration"], seed=j["seed"],
+                        inference_steps=8, audio_cover_strength=strength)
+                    cfg = GenerationConfig(batch_size=1, use_random_seed=False)
+                    tmp = f"/tmp/gen/{j['id']}_{lang}_{int(strength * 100)}"
+                    res = generate_music(dit, llm, params, cfg, save_dir=tmp)
+                    if res.success and res.audios:
+                        src = res.audios[0]["path"]
+                        shutil.copy(src, dest_stub + os.path.splitext(src)[1])
+                        ok = True
+                        break
+                    log.append(f"{j['id']} {lang} s={strength} ({vocal_lang}): {getattr(res, 'error', 'no audio')}"[:400])
+                except Exception:
+                    log.append(f"{j['id']} {lang} s={strength} ({vocal_lang}): {traceback.format_exc()[-400:]}")
+            log.append(f"{j['id']} {lang} s={strength}: {'OK' if ok else 'FAILED'}")
 with open(os.path.join(OUT, "log.txt"), "w") as f:
     f.write("\n".join(log))
 print("\n".join(log))

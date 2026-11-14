@@ -143,18 +143,25 @@ def main(song_ids):
         song = load_song(sid)
         target = song_length_sec(song)
         for lang in settings["languages"]:
-            found = glob.glob(os.path.join(got, "**", f"{sid}_{lang}.*"), recursive=True)
+            found = sorted(glob.glob(os.path.join(got, "**", f"{sid}_{lang}.*"), recursive=True), reverse=True)
             if not found:
                 print(f"  {sid} {lang}: no sung file")
                 continue
             dest = os.path.join(out_dir(sid, "audio"), f"sung_{lang}.wav")
-            sh(f'ffmpeg -hide_banner -loglevel error -y -i "{found[0]}" -ar 44100 -ac 2 "{dest}"')
-            dur = float(sh(f'ffprobe -v error -show_entries format=duration -of csv=p=0 "{dest}"').stdout.strip() or 0)
-            ok_len = abs(dur - target) <= MAX_LENGTH_DIFF
-            ok_words, score = understandable(dest, song, lang) if ok_len else (False, 0.0)
-            print(f"  {sid} {lang}: length {dur:.1f}s vs {target:.1f}s, words recognised {score:.0%}")
-            if not (ok_len and ok_words):
-                os.remove(dest)
+            kept = False
+            for cand in found:  # strongest melody match first
+                sh(f'ffmpeg -hide_banner -loglevel error -y -i "{cand}" -ar 44100 -ac 2 "{dest}"')
+                dur = float(sh(f'ffprobe -v error -show_entries format=duration -of csv=p=0 "{dest}"').stdout.strip() or 0)
+                ok_len = abs(dur - target) <= MAX_LENGTH_DIFF
+                ok_words, score = understandable(dest, song, lang) if ok_len else (False, 0.0)
+                print(f"  {sid} {lang} [{os.path.basename(cand)}]: length {dur:.1f}s vs {target:.1f}s, words recognised {score:.0%}")
+                if ok_len and ok_words:
+                    kept = True
+                    print("    -> accepted: this sung version will be used")
+                    break
+            if not kept:
+                if os.path.exists(dest):
+                    os.remove(dest)
                 print("    -> rejected, normal AI voice will be used")
     return 0
 
