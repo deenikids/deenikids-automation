@@ -22,27 +22,29 @@ def pivot(n, loc, parent=None):
     return e
 skin, kurta, cap, trouser, shoe, hair, white, dark, pink = (mat("skin", (.78, .52, .36), .5, .15), mat("kurta", (.12, .62, .35), .6), mat("cap", (.98, .97, .95), .7),
     mat("tr", (.96, .92, .8), .6), mat("shoe", (.45, .28, .18), .4), mat("hair", (.18, .1, .07), .6), mat("w", (1, 1, 1), .15), mat("d", (.02, .03, .06), .1), mat("p", (1, .5, .55), .5))
+eyes = []
 root = pivot("ali", (0, 0, 0))
 body = part("s", "torso", (0, 0, 1.55), (.62, .5, .82), kurta, root)
 part("c", "hem", (0, 0, 1.05), (.7, .56, .12), mat("trim", (.95, .95, .9), .5), root)
 head = pivot("headp", (0, 0, 2.55), root)
 part("s", "head", (0, 0, .55), (.95, .88, .88), skin, head)
 part("s", "hair", (-.12, 0, .78), (.93, .86, .7), hair, head)
-part("s", "cap", (0, 0, .86), (.82, .76, .62), cap, head)
+part("s", "cap", (0, 0, .9), (.84, .78, .6), cap, head)
 part("c", "capband", (0, 0, .5), (.0, .0, .0), mat("band", (.9, .9, .88), .6), head)
 for s in (-1, 1):
     part("s", "ear", (-.02, s * .92, .52), (.14, .08, .2), skin, head)
-    part("s", "eyew", (.78, s * .33, .62), (.19, .17, .24), white, head)
+    eyes.append(part("s", "eyew", (.78, s * .33, .62), (.19, .17, .24), white, head))
     part("s", "pupil", (.94, s * .33, .62), (.1, .09, .16), dark, head)
     part("s", "shine", (1.02, s * .3, .7), (.035, .035, .05), white, head)
     part("s", "cheek", (.8, s * .56, .38), (.1, .05, .08), pink, head)
     part("s", "brow", (.88, s * .33, .9), (.09, .2, .04), hair, head, (0, 0, 0))
 part("s", "nose", (.9, 0, .5), (.08, .07, .07), skin, head)
-part("s", "mouth", (.86, 0, .3), (.1, .16, .06), mat("mouth", (.55, .08, .12), .3), head)
+mouth_o = part("s", "mouth", (.86, 0, .3), (.1, .16, .06), mat("mouth", (.55, .08, .12), .3), head)
 part("s", "tongue", (.9, 0, .27), (.05, .09, .03), pink, head)
 arms = {}
 for s, nm in ((-1, "R"), (1, "L")):
-    sh = pivot("sh" + nm, (0, s * .6, 2.05), root)
+    sh = pivot("sh" + nm, (0, s * .44, 2.08), root)
+    part("s", "joint", (0, 0, 0), (.2, .2, .2), kurta, sh)
     part("c", "arm", (0, 0, -.34), (.17, .17, .4), kurta, sh)
     part("s", "hand", (0, 0, -.76), (.17, .17, .17), skin, sh)
     arms[nm] = sh
@@ -59,7 +61,22 @@ bpy.ops.object.light_add(type='AREA', location=(5, -4, 7)); L = bpy.context.obje
 bpy.ops.object.light_add(type='AREA', location=(4, 5, 3)); L2 = bpy.context.object; L2.data.energy = 140; L2.data.size = 5
 w = bpy.data.worlds.new("w"); sc.world = w; w.use_nodes = True; bg = w.node_tree.nodes["Background"]; bg.inputs[0].default_value = (.75, .88, 1, 1); bg.inputs[1].default_value = 1.0
 bpy.ops.object.camera_add(location=(15, -.3, 2.0), rotation=(math.radians(88), 0, math.radians(90))); sc.camera = bpy.context.object; sc.camera.data.lens = 50
-sc.view_settings.view_transform = "Standard"; sc.render.engine = "CYCLES"; sc.cycles.samples = int(sys.argv[-3] if "wave" in sys.argv else sys.argv[-2]); sc.cycles.use_denoising = True
+sc.view_settings.view_transform = "Standard"; sc.render.engine = "CYCLES"; sc.cycles.samples = int([a for a in sys.argv if a.isdigit()][0]); sc.cycles.use_denoising = True
 sc.render.resolution_x, sc.render.resolution_y = 960, 540
-sc.render.filepath = [a for a in sys.argv if a.endswith(".png")][0]
+sc.render.filepath = ([a for a in sys.argv if a.endswith(".png")] or ["/tmp/x.png"])[0]
+if "clip" in sys.argv:
+    sc.render.resolution_x, sc.render.resolution_y = 640, 360
+    out = [a for a in sys.argv if a.startswith("/")][0]; N = 24
+    for f in range(N):
+        ph = f / N * 2 * math.pi
+        arms["L"].rotation_euler = (math.radians(150), 0, math.radians(18 * math.sin(ph * 2)))
+        arms["R"].rotation_euler = (math.radians(-22), 0, 0)
+        head.rotation_euler = (0, math.radians(4 * math.sin(ph)), math.radians(-6 * math.sin(ph)))
+        root.location.z = abs(math.sin(ph)) * 0.12
+        talk = 0.05 + 0.1 * abs(math.sin(ph * 2))
+        mouth_o.scale = (.1, .16, talk + .03)
+        bl = 0.15 if f in (10, 11) else 1.0
+        for e in eyes: e.scale = (.19, .17, .24 * bl)
+        sc.render.filepath = f"{out}/f{f:03d}.png"; bpy.ops.render.render(write_still=True)
+    sys.exit(0)
 t0 = time.time(); bpy.ops.render.render(write_still=True); print("RENDER SECONDS", round(time.time() - t0, 1))
