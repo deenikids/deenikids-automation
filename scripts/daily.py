@@ -109,6 +109,8 @@ def main():
         if good and qc and religious_ok and not a.no_upload:
             post = row["post"]
             for lang, when in zip(("en", "hi"), post):
+                if lang not in settings["languages"]:
+                    continue  # English-only channel: skip languages that are switched off
                 args = ["scripts/upload_youtube.py", sid, "--lang", lang, "--what", "all" if not original else "original"]
                 if settings["youtube"]["api_project_audited"]:
                     args += ["--publish-at", publish_time(rows[slot]["date"], when)]
