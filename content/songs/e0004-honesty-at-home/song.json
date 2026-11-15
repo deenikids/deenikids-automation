@@ -60,7 +60,7 @@
    "lead": "E5:0.5 F5:0.5 A5:0.5 F5:0.5 E5:0.5 F5:0.5 E5:1",
    "en": "Ali and Mina, one, two, three,",
    "hi": "Ali, Mina, ek do teen,",
-   "hi_tts": "अयान, अमीरा, एक दो तीन,"
+   "hi_tts": "अली, मिना, एक दो तीन,"
   },
   {
    "section": "verse1",
@@ -68,7 +68,7 @@
    "lead": "G5:0.5 A5:0.5 B5:1 B5:2",
    "en": "Deeni and Bubbles, happy as can be!",
    "hi": "Deeni Bubbles khush aur haseen!",
-   "hi_tts": "दीनी बबली खुश और हसीन!"
+   "hi_tts": "दीनी बुब्ब्लेस खुश और हसीन!"
   },
   {
    "section": "chorus",
@@ -172,7 +172,7 @@
    "lead": "E5:0.5 G5:0.5 A5:1 G5:1 G5:1",
    "en": "Once upon a time, Ali forgot,",
    "hi": "Ek din Ali bhool gaya,",
-   "hi_tts": "एक दिन अयान भूल गया,"
+   "hi_tts": "एक दिन अली भूल गया,"
   },
   {
    "section": "bridge",
@@ -180,7 +180,7 @@
    "lead": "A5:1 G5:0.5 E5:0.5 F5:1 F5:1",
    "en": "Then Mina helped a lot:",
    "hi": "Mina ne pyaar se kaha:",
-   "hi_tts": "अमीरा ने प्यार से कहा:"
+   "hi_tts": "मिना ने प्यार से कहा:"
   },
   {
    "section": "bridge",
@@ -196,7 +196,7 @@
    "lead": "G5:0.5 A5:0.5 B5:1 B5:2",
    "en": "Ali smiled: \"Thank you a lot!\"",
    "hi": "Ali bola: \"Shukriya!\"",
-   "hi_tts": "अयान बोला: \"शुक्रिया!\""
+   "hi_tts": "अली बोला: \"शुक्रिया!\""
   },
   {
    "section": "chorus",
