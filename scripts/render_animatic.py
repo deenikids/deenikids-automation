@@ -411,6 +411,17 @@ def draw_character(d, ch, scene, t, ts, beat_phase, bar):
                 dy = -abs(math.sin(math.pi * beat_phase)) * 0.075
             elif move in ("clap", "dance", "happy"):
                 dy = -abs(math.sin(math.pi * beat_phase)) * 0.03
+    # --- extra character moments: bigger energy in choruses, side-to-side sway, and a "spotlight" hop
+    if scene.get("camera") != "slow_push_in" and act not in ("swim_in", "walk_in_left", "walk_in_right"):
+        bars_ = G["song"]["bars"]
+        sec = bars_[bar].get("section") if bar < len(bars_) else ""
+        if sec == "chorus":
+            dy -= abs(math.sin(math.pi * beat_phase)) * 0.03
+            dx += math.sin(t * math.pi * G["bps"] / 2 + x * 4) * 0.012
+        order = [n for n in ("ayaan", "amira", "bubbly", "deeni") ]
+        if ch["name"] == order[(bar // 2) % 4]:  # one friend gets the spotlight every two bars
+            ph = (t / (bs * 2)) % 1.0
+            dy -= math.sin(math.pi * min(1.0, ph * 2.2)) * 0.06 if ph < 0.46 else 0.0
     sing_bars = ch.get("sing_bars")
     sings = act != "juggle" and (sing_bars is None or sing_bars[0] <= bar < sing_bars[1])
     blink = ((t + x * 1.7) % 3.3) < 0.13

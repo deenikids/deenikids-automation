@@ -58,16 +58,16 @@
    "section": "verse1",
    "chord": "Am",
    "lead": "E5:0.5 F5:0.5 A5:0.5 F5:0.5 E5:0.5 F5:0.5 E5:1",
-   "en": "Ayaan and Amira, one, two, three,",
-   "hi": "Ayaan, Amira, ek do teen,",
+   "en": "Ali and Mina, one, two, three,",
+   "hi": "Ali, Mina, ek do teen,",
    "hi_tts": "अयान, अमीरा, एक दो तीन,"
   },
   {
    "section": "verse1",
    "chord": "G",
    "lead": "G5:0.5 A5:0.5 B5:1 B5:2",
-   "en": "Deeni and Bubbly, happy as can be!",
-   "hi": "Deeni Bubbly khush aur haseen!",
+   "en": "Deeni and Bubbles, happy as can be!",
+   "hi": "Deeni Bubbles khush aur haseen!",
    "hi_tts": "दीनी बबली खुश और हसीन!"
   },
   {
@@ -170,16 +170,16 @@
    "section": "bridge",
    "chord": "C",
    "lead": "E5:0.5 G5:0.5 A5:1 G5:1 G5:1",
-   "en": "Once upon a time, Ayaan forgot,",
-   "hi": "Ek din Ayaan bhool gaya,",
+   "en": "Once upon a time, Ali forgot,",
+   "hi": "Ek din Ali bhool gaya,",
    "hi_tts": "एक दिन अयान भूल गया,"
   },
   {
    "section": "bridge",
    "chord": "F",
    "lead": "A5:1 G5:0.5 E5:0.5 F5:1 F5:1",
-   "en": "Then Amira helped a lot:",
-   "hi": "Amira ne pyaar se kaha:",
+   "en": "Then Mina helped a lot:",
+   "hi": "Mina ne pyaar se kaha:",
    "hi_tts": "अमीरा ने प्यार से कहा:"
   },
   {
@@ -194,8 +194,8 @@
    "section": "bridge",
    "chord": "G",
    "lead": "G5:0.5 A5:0.5 B5:1 B5:2",
-   "en": "Ayaan smiled: \"Thank you a lot!\"",
-   "hi": "Ayaan bola: \"Shukriya!\"",
+   "en": "Ali smiled: \"Thank you a lot!\"",
+   "hi": "Ali bola: \"Shukriya!\"",
    "hi_tts": "अयान बोला: \"शुक्रिया!\""
   },
   {
@@ -350,7 +350,7 @@
  "youtube": {
   "en": {
    "title": "Honesty at Home | Story + Song | Islamic Songs for Kids | Deeni & Friends",
-   "description": "Honesty at Home 🎵 Sing along with Deeni, Ayaan, Amira and Bubbly!\n\nToday's lesson: Always tell the truth.\n📖 Source: Sahih al-Bukhari 6094\n\n✨ Sing, dance and do the actions together.\n👶 Made for little Muslims aged 1–6.\n▶️ More from the series 'Values & Big Feelings' in our playlist.\n\nDeeni & Friends: Little Hearts, Big Imaan.\n#IslamicSongsForKids #MuslimKids #NurseryRhymes",
+   "description": "Honesty at Home 🎵 Sing along with Deeni, Ali, Mina and Bubbles!\n\nToday's lesson: Always tell the truth.\n📖 Source: Sahih al-Bukhari 6094\n\n✨ Sing, dance and do the actions together.\n👶 Made for little Muslims aged 1–6.\n▶️ More from the series 'Values & Big Feelings' in our playlist.\n\nDeeni & Friends: Little Hearts, Big Imaan.\n#IslamicSongsForKids #MuslimKids #NurseryRhymes",
    "tags": [
     "honesty at home",
     "values & big feelings",
@@ -366,7 +366,7 @@
   },
   "hi": {
    "title": "Sach Bolna Ghar Par | Kahani + Gaana | Bachon Ki Islamic Nazam | Deeni & Friends",
-   "description": "Sach Bolna Ghar Par 🎵 Deeni, Ayaan, Amira aur Bubbly ke saath gaao!\n\nAaj ka sabaq: Sach Bolna Ghar Par.\n📖 Source: Sahih al-Bukhari 6094\n\n✨ Saath mein gaao, naacho aur actions karo.\n👶 1–6 saal ke chhote Muslim bachon ke liye.\n▶️ 'Achhi Aadatein' ki aur videos playlist mein.\n\nDeeni & Friends: Little Hearts, Big Imaan.\n#BachonKiNazam #IslamicNazam #UrduNazam",
+   "description": "Sach Bolna Ghar Par 🎵 Deeni, Ali, Mina aur Bubbles ke saath gaao!\n\nAaj ka sabaq: Sach Bolna Ghar Par.\n📖 Source: Sahih al-Bukhari 6094\n\n✨ Saath mein gaao, naacho aur actions karo.\n👶 1–6 saal ke chhote Muslim bachon ke liye.\n▶️ 'Achhi Aadatein' ki aur videos playlist mein.\n\nDeeni & Friends: Little Hearts, Big Imaan.\n#BachonKiNazam #IslamicNazam #UrduNazam",
    "tags": [
     "sach bolna ghar par",
     "achhi aadatein",

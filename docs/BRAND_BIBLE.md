@@ -24,7 +24,7 @@
 | Primary | Deeni Blue | `#269AD6` |
 | Primary | Imaan Green | `#2E9E5B` |
 | Accent | Sunshine Yellow | `#FFD63F` / `#FFD650` |
-| Accent | Amira Pink | `#F27BA8` |
+| Accent | Mina Pink | `#F27BA8` |
 | Neutral | Cream | `#FFF1D0` |
 | Outline / text panels | Night Navy | `#1E2A4A` |
 
@@ -42,7 +42,7 @@ Word-mark "DEENIKIDS" in Baloo 2 ExtraBold, Sunshine Yellow, navy outline. The f
 2. **Human approval** of every religious script before upload (`review_gate.py` enforces this).
 3. **Never depict Prophets** or the Companions. Stories about them are told by narration, with scenery and objects only.
 4. **No depictions of Allah**, angels, or the Ka'bah interior. The Ka'bah exterior may be shown respectfully in Hajj episodes.
-5. **Modesty:** Amira always wears her hijab (hair, ears and neck covered), long sleeves, long dress. No romance, no mocking anyone.
+5. **Modesty:** Mina always wears her hijab (hair, ears and neck covered), long sleeves, long dress. No romance, no mocking anyone.
 6. **Music:** current decision is songs with instruments. If the channel later offers a "vocals and percussion only" version for families who avoid instruments, keep it as a separate playlist.
 7. **Kids' safety:** no dangerous stunts children could copy, no scary monsters, no loud jump-scares, no requests for personal information.
 8. **Originality:** all melodies, lyrics, characters and artwork are made for DEENIKIDS. See §7.

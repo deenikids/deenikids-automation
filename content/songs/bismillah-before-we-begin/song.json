@@ -78,7 +78,7 @@
     {"section": "interlude", "chord": "G", "lead": "A5:0.5 G5:0.5 F5:0.5 D5:0.5 G5:2"},
 
     {"section": "verse2", "chord": "C",  "lead": "C5:0.5 E5:0.5 G5:0.5 G5:0.5 A5:0.5 G5:0.5 E5:0.5 E5:0.5",
-     "en": "Ayaan is ready, Amira too,", "hi": "Ayaan taiyaar, Amira bhi,", "hi_tts": "अयान तैयार, अमीरा भी,"},
+     "en": "Ali is ready, Mina too,", "hi": "Ali taiyaar, Mina bhi,", "hi_tts": "अयान तैयार, अमीरा भी,"},
     {"section": "verse2", "chord": "F",  "lead": "F5:0.5 A5:0.5 C6:1 A5:0.5 G5:0.5 F5:0.5 F5:0.5",
      "en": "Deeni smiles and sings with you.", "hi": "Deeni hans ke gaaye sabhi!", "hi_tts": "दीनी हँस के गाए सभी!"},
     {"section": "verse2", "chord": "Am", "lead": "E5:0.5 E5:0.5 E5:0.5 A5:0.5 G5:0.5 E5:0.5 C5:0.5 E5:0.5",
@@ -113,13 +113,13 @@
   "youtube": {
     "en": {
       "title": "Bismillah Before We Begin | Islamic Song for Kids | DEENIKIDS",
-      "description": "Sing along with Deeni, Ayaan, Amira and Bubbly! Little Muslims learn to say Bismillah before eating and Alhamdulillah after eating.\n\nLesson source: Sahih al-Bukhari 5376 and Sahih Muslim 2734.\n\nDEENIKIDS - Little Hearts, Big Imaan.",
+      "description": "Sing along with Deeni, Ali, Mina and Bubbles! Little Muslims learn to say Bismillah before eating and Alhamdulillah after eating.\n\nLesson source: Sahih al-Bukhari 5376 and Sahih Muslim 2734.\n\nDEENIKIDS - Little Hearts, Big Imaan.",
       "tags": ["bismillah song", "islamic songs for kids", "muslim kids", "nursery rhymes", "duas for kids", "deenikids"],
       "language": "en"
     },
     "hi": {
       "title": "Bismillah Se Shuru Karein | Bachchon Ke Liye Islamic Song | DEENIKIDS",
-      "description": "Deeni, Ayaan, Amira aur Bubbly ke saath gaao! Khaane se pehle Bismillah aur khaane ke baad Alhamdulillah bolna seekho.\n\nSource: Sahih al-Bukhari 5376, Sahih Muslim 2734.\n\nDEENIKIDS - Little Hearts, Big Imaan.",
+      "description": "Deeni, Ali, Mina aur Bubbles ke saath gaao! Khaane se pehle Bismillah aur khaane ke baad Alhamdulillah bolna seekho.\n\nSource: Sahih al-Bukhari 5376, Sahih Muslim 2734.\n\nDEENIKIDS - Little Hearts, Big Imaan.",
       "tags": ["bismillah song hindi", "islamic songs for kids urdu", "muslim bachche", "deenikids"],
       "language": "hi"
     }

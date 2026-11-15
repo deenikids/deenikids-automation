@@ -38,8 +38,8 @@ DUAS = [
 ]
 DUA_FORMATS = [("Song", "Song"), ("Story at Home", "Ghar Ki Kahani"), ("Story at the Park", "Park Ki Kahani"),
                ("Sing & Practice with Deeni", "Deeni Ke Saath Practice"), ("Dance Remix", "Dance Remix"),
-               ("Quiz with Bubbly", "Bubbly Ka Quiz"), ("Slow Lullaby Version", "Lori Version"),
-               ("Call & Response", "Tum Bhi Bolo!"), ("Ayaan Forgets!", "Ayaan Bhool Gaya!"), ("Amira Teaches", "Amira Sikhaati Hai")]
+               ("Quiz with Bubbles", "Bubbles Ka Quiz"), ("Slow Lullaby Version", "Lori Version"),
+               ("Call & Response", "Tum Bhi Bolo!"), ("Ali Forgets!", "Ali Bhool Gaya!"), ("Mina Teaches", "Mina Sikhaati Hai")]
 
 LETTERS = ["Alif", "Ba", "Ta", "Tha", "Jeem", "Haa", "Khaa", "Dal", "Dhal", "Ra", "Zay", "Seen", "Sheen", "Saad", "Daad",
            "Taa", "Dhaa", "Ain", "Ghain", "Fa", "Qaf", "Kaf", "Lam", "Meem", "Noon", "Ha", "Waw", "Ya"]
@@ -55,7 +55,7 @@ ARABIC = ([(f"Arabic Letter {l}", f"Arabic Harf {l}", f"{l}!", f"{l}!", f"Learn 
               ("Tanween: An, In, Un", "Do Zabar, Do Zer, Do Pesh", "An In Un!"), ("Sukoon and Shaddah", "Jazm aur Tashdeed", "Shaddah!"),
               ("Long Vowels: Madd", "Lambi Aawaaz: Madd", "Madd!")]])
 ARABIC_FORMATS = [("Song", "Gaana"), ("Words That Start With It", "Is Se Shuru Hone Wale Lafz"), ("Trace & Write", "Likhna Seekho"),
-                  ("Quiz with Bubbly", "Bubbly Ka Quiz"), ("Treasure Hunt", "Khazana Dhoondo"), ("Dance Song", "Dance Song")]
+                  ("Quiz with Bubbles", "Bubbles Ka Quiz"), ("Treasure Hunt", "Khazana Dhoondo"), ("Dance Song", "Dance Song")]
 
 VALUES = [
     ("Honesty", "Sach Bolna", "Tell the Truth!", "Sach Bolo!", "Always tell the truth", "Sahih al-Bukhari 6094"),
@@ -91,7 +91,7 @@ VALUES = [
 ]
 SETTINGS = [("at Home", "Ghar Par"), ("at the Park", "Park Mein"), ("at the Masjid", "Masjid Mein"), ("at School", "School Mein"),
             ("at the Market", "Bazaar Mein")]
-VALUE_FORMATS = [("Story + Song", "Kahani + Gaana"), ("Role-play with Bubbly", "Bubbly Ke Saath Natak")]
+VALUE_FORMATS = [("Story + Song", "Kahani + Gaana"), ("Role-play with Bubbles", "Bubbles Ke Saath Natak")]
 
 COLOURS = [("Red", "Laal"), ("Blue", "Neela"), ("Yellow", "Peela"), ("Green", "Hara"), ("Orange", "Naarangi"), ("Purple", "Jamni"),
            ("Pink", "Gulabi"), ("Brown", "Bhoora"), ("Black and White", "Kaala aur Safed"), ("Rainbow Colours", "Indradhanush Ke Rang")]
@@ -179,7 +179,7 @@ BASICS = (
         ("Angels Are Allah's Creation", "Farishte Allah Ki Makhlooq", "Angels!", "Farishte!", "Angels are created by Allah", "Sahih Muslim 8"),
         ("The Day of Jumu'ah Song", "Jumma Ka Gaana", "Jumu'ah!", "Jumma!", "Friday is a special day", "Quran 62:9"),
         ("Helping at the Masjid", "Masjid Mein Madad", "Helpers!", "Madadgaar!", "Help keep the masjid clean", NO_SRC)]])
-BASICS_FORMATS = [("Song", "Gaana"), ("Story", "Kahani"), ("Quiz with Bubbly", "Bubbly Ka Quiz"), ("Activity", "Activity"), ("Remix", "Remix")]
+BASICS_FORMATS = [("Song", "Gaana"), ("Story", "Kahani"), ("Quiz with Bubbles", "Bubbles Ka Quiz"), ("Activity", "Activity"), ("Remix", "Remix")]
 SURAH_FORMATS = [("Line by Line", "Aayat Ba Aayat"), ("Revision Sing-along", "Dohraao"), ("Memory Challenge", "Yaad Karo Challenge"),
                  ("Meaning for Kids", "Bachon Ke Liye Matlab"), ("Listen and Repeat", "Suno Aur Dohraao")]
 
@@ -205,7 +205,7 @@ LULLABIES = [
     ("Goodnight Mama and Baba", "Shab Bakhair Ammi Abbu", NO_SRC), ("Calm Breathing Lullaby", "Aaram Se Saans Lo", NO_SRC),
     ("Thank You Allah for Today", "Shukriya Allah Aaj Ke Liye", "Quran 14:7"), ("Rain Lullaby", "Baarish Ki Lori", CREATOR),
     ("Alhamdulillah Lullaby", "Alhamdulillah Lori", "Sahih Muslim 223"), ("Little Hearts Lullaby", "Chhote Dil Ki Lori", NO_SRC),
-    ("Sleepy Bubbly", "Neend Wala Bubbly", NO_SRC), ("Soft Clouds Lullaby", "Naram Baadal Lori", CREATOR),
+    ("Sleepy Bubbles", "Neend Wala Bubbles", NO_SRC), ("Soft Clouds Lullaby", "Naram Baadal Lori", CREATOR),
     ("Crescent Moon Lullaby", "Hilaal Lori", CREATOR), ("Allah Is Always With Me", "Allah Hamesha Saath Hai", "Quran 57:4"),
     ("Sweet Dreams Little One", "Meethe Sapne", NO_SRC), ("Sleepy Animals Lullaby", "Soye Jaanwar Lori", CREATOR),
     ("Quiet Night Lullaby", "Khamosh Raat Lori", NO_SRC), ("Hug Time Lullaby", "Jhappi Lori", NO_SRC)]
@@ -264,7 +264,7 @@ HUNT_PLACES = [("in the Kitchen", "Rasoi Mein"), ("in the Garden", "Bageeche Mei
                ("at the Bakery", "Bakery Mein")]
 SITUATIONS = [("at Home", "Ghar Par"), ("at the Park", "Park Mein"), ("at the Masjid", "Masjid Mein"), ("at School", "School Mein"),
               ("at the Market", "Bazaar Mein"), ("in the Car", "Gaadi Mein")]
-LETTER_ANGLES = [("Sound", "Aawaaz"), ("Shape", "Shakal"), ("with Deeni", "Deeni Ke Saath"), ("with Bubbly", "Bubbly Ke Saath"),
+LETTER_ANGLES = [("Sound", "Aawaaz"), ("Shape", "Shakal"), ("with Deeni", "Deeni Ke Saath"), ("with Bubbles", "Bubbles Ke Saath"),
                  ("Find It!", "Dhoondo!"), ("Write It!", "Likho!")]
 
 
@@ -317,6 +317,6 @@ EMOJI = {
     "Books": "📚", "Cats": "🐈", "Clouds": "☁", "Butterflies": "🦋",
 }
 SERIES_EMOJI = {"Islamic Basics & Surahs": "🕌", "Ramadan with Deeni": "🌙", "Hajj & Eid al-Adha": "🕋", "Eid Specials": "🎁",
-                "Bedtime Lullabies": "🌙", "Arabic for Little Ones": "🔤", "Under the Sea with Deeni": "🐠", "Deeni & Bubbly Adventures": "🎒"}
+                "Bedtime Lullabies": "🌙", "Arabic for Little Ones": "🔤", "Under the Sea with Deeni": "🐠", "Deeni & Bubbles Adventures": "🎒"}
 BASICS_EMOJI = {"Fajr": "🌅", "Dhuhr": "☀", "Asr": "🌤", "Maghrib": "🌇", "Isha": "🌙", "Wudu": "💧", "Quran": "📖", "Kaaba": "🕋",
                 "Zakat": "💰", "Fasting": "🌙", "Hajj": "🕋", "Qibla": "🧭", "Friday": "🛁", "Month": "🌙", "Dua": "🤲", "Charity": "💰"}

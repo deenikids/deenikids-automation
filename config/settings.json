@@ -2,8 +2,7 @@
   "brand": "Deeni & Friends",
   "tagline": "Little Hearts, Big Imaan.",
   "languages": [
-    "en",
-    "hi"
+    "en"
   ],
   "video": {
     "fps": 24,
@@ -35,8 +34,8 @@
         "Bismillah": "bɪsmɪlˈlɑː",
         "Alhamdulillah": "ʌlhʌmdʊlɪlˈlɑː",
         "Allah": "ʌlˈlɑː",
-        "Ayaan": "ʌjˈɑːn",
-        "Amira": "ʌˈmiːɹʌ"
+        "Ali": "ʌjˈɑːn",
+        "Mina": "ʌˈmiːɹʌ"
       },
       "hi": {}
     }

@@ -81,11 +81,11 @@ def make_melodies(seed):
 
 
 # ------------------------------------------------------------------ lyrics
-V1_EN = [["Hello friends, come sing with me,", "Today we learn about {S}!", "Ayaan and Amira, one, two, three,", "Deeni and Bubbly, happy as can be!"],
-         ["Clap your hands and tap your feet,", "Let's learn {S}, it's so sweet!", "Deeni swims and Bubbly spins,", "Here we go, the song begins!"],
+V1_EN = [["Hello friends, come sing with me,", "Today we learn about {S}!", "Ali and Mina, one, two, three,", "Deeni and Bubbles, happy as can be!"],
+         ["Clap your hands and tap your feet,", "Let's learn {S}, it's so sweet!", "Deeni swims and Bubbles spins,", "Here we go, the song begins!"],
          ["Are you ready? Here we go!", "{S}, we want to know!", "Sing it loud and sing it slow,", "Deeni and friends, on with the show!"]]
-V1_HI = [["Aao dosto, gaao saath,", "Aaj seekhenge {S} ki baat!", "Ayaan, Amira, ek do teen,", "Deeni Bubbly khush aur haseen!"],
-         ["Taali bajao, pair hilao,", "{S} seekho, saath mein gaao!", "Deeni tairey, Bubbly ghoome,", "Gaana shuru, sab mil ke jhoome!"],
+V1_HI = [["Aao dosto, gaao saath,", "Aaj seekhenge {S} ki baat!", "Ali, Mina, ek do teen,", "Deeni Bubbles khush aur haseen!"],
+         ["Taali bajao, pair hilao,", "{S} seekho, saath mein gaao!", "Deeni tairey, Bubbles ghoome,", "Gaana shuru, sab mil ke jhoome!"],
          ["Taiyaar ho? Chalo chalein!", "{S} ko hum seekh lein!", "Zor se gaao, dheere gaao,", "Deeni ke saath mauj manao!"]]
 V2 = {
     "dua": (["{L}!", "We say it softly every day,", "{W}, {W},", "That's a lovely Muslim way!"],
@@ -98,8 +98,8 @@ V2 = {
                   ["Dekho dekho, kya hai yahaan?", "{W}! Allah ne banaya jahaan!", "{Lh}!", "Seekhna hai kitna aasaan!"]),
     "basics": (["Little Muslims, come and see,", "Learning Islam happily!", "{L}!", "Say it with your family!"],
                ["Chhote Muslim, aao dekho,", "Islam ki baatein seekho,", "{Lh}!", "Ghar walon ke saath bolo!"]),
-    "adventure": (["Off we go, a brand new place,", "With a smile on every face!", "{L}!", "Deeni and Bubbly, what a race!"],
-                  ["Chalo chalein nayi jagah,", "Muskurahat har taraf yahaan!", "{Lh}!", "Deeni Bubbly ki mauj wahaan!"]),
+    "adventure": (["Off we go, a brand new place,", "With a smile on every face!", "{L}!", "Deeni and Bubbles, what a race!"],
+                  ["Chalo chalein nayi jagah,", "Muskurahat har taraf yahaan!", "{Lh}!", "Deeni Bubbles ki mauj wahaan!"]),
     "sea": (["Splish and splash, down in the sea,", "The {W} swims with Deeni!", "{L}!", "Bubbles float up, one, two, three!"],
             ["Chhap chhap, samundar mein,", "{W} tairey Deeni ke saath mein!", "{Lh}!", "Bulbule upar, ek do teen!"]),
     "lullaby": (["Sleepy eyes and stars so bright,", "The moon is shining soft and white,", "{L}.", "Goodnight, goodnight, sleep tight tonight."],
@@ -120,8 +120,8 @@ LULL_CH = (["{W}, {W},", "Close your eyes and rest,", "{W}, {W},", "Sleep is the
 BRIDGE = {
     "quiz": (["Quiz time! Are you ready?", "What did we learn today?", "Yes! {W}!", "Great job, little star!"],
              ["Quiz ka waqt! Taiyaar ho?", "Aaj kya seekha, batao?", "Haan! {W}!", "Shabaash, chhote sitaare!"]),
-    "story": (["Once upon a time, Ayaan forgot,", "Then Amira helped a lot:", "\"Remember: {L}!\"", "Ayaan smiled: \"Thank you a lot!\""],
-              ["Ek din Ayaan bhool gaya,", "Amira ne pyaar se kaha:", "\"Yaad rakho: {Lh}!\"", "Ayaan bola: \"Shukriya!\""]),
+    "story": (["Once upon a time, Ali forgot,", "Then Mina helped a lot:", "\"Remember: {L}!\"", "Ali smiled: \"Thank you a lot!\""],
+              ["Ek din Ali bhool gaya,", "Mina ne pyaar se kaha:", "\"Yaad rakho: {Lh}!\"", "Ali bola: \"Shukriya!\""]),
     "plain": (["Now let's say it all together,", "{W}! {W}!", "{L}!", "Hooray, we did it together!"],
               ["Ab mil kar sab bolo,", "{W}! {W}!", "{Lh}!", "Hooray, humne kar dikhaaya!"]),
 }
@@ -201,7 +201,7 @@ def kind_of(series, event_kind):
     if event_kind in ("eid_fitr", "eid_adha"):
         return "eid"
     return {"Dua & Routine Songs": "dua", "Arabic for Little Ones": "arabic", "Values & Big Feelings": "values",
-            "Allah Made It! (Preschool)": "preschool", "Islamic Basics & Surahs": "basics", "Deeni & Bubbly Adventures": "adventure",
+            "Allah Made It! (Preschool)": "preschool", "Islamic Basics & Surahs": "basics", "Deeni & Bubbles Adventures": "adventure",
             "Under the Sea with Deeni": "sea", "Bedtime Lullabies": "lullaby"}.get(series, "dua" if "Dua" in series or "Quiz" in series else "basics")
 
 

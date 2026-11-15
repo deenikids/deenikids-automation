@@ -55,9 +55,9 @@ Use these with any image tool for **concept art only**. Free image tools cannot 
 `original character design, high-quality 3D preschool animation style, soft rounded shapes, soft studio lighting, bright friendly colours, clean navy outline feel, plain white background, full body, character turnaround sheet, consistent proportions, no text, no logo`
 
 1. **Deeni, turnaround:** "A friendly baby shark mascot with a turquoise-blue (#269AD6) rounded bean-shaped body, cream belly, very large expressive eyes, soft rounded fins, a small white crescent-moon mark on the dorsal fin, no teeth, floating inside a clear transparent water bubble. Show FRONT view, SIDE view, BACK view and THREE-QUARTER view in one row, same size and pose."
-2. **Ayaan, turnaround:** "A cheerful 4-year-old Muslim boy with warm medium-brown skin, short dark brown hair, a white taqiyah prayer cap, a knee-length green kurta with three white buttons, cream trousers and brown shoes, big friendly eyes, 3 heads tall. FRONT, SIDE, BACK and THREE-QUARTER views in one row."
-3. **Amira, turnaround:** "A kind 5-year-old Muslim girl with warm light-brown skin, a pink hijab fully covering her hair, ears and neck, a long-sleeved ankle-length pink dress with a white trim, plum shoes, big friendly eyes, 3 heads tall. FRONT, SIDE, BACK and THREE-QUARTER views in one row."
-4. **Bubbly, turnaround:** "A cute round yellow octopus with orange spots, big shiny eyes, pink cheeks, eight short wavy tentacles, very friendly and silly. FRONT, SIDE, BACK and THREE-QUARTER views in one row."
+2. **Ali, turnaround:** "A cheerful 4-year-old Muslim boy with warm medium-brown skin, short dark brown hair, a white taqiyah prayer cap, a knee-length green kurta with three white buttons, cream trousers and brown shoes, big friendly eyes, 3 heads tall. FRONT, SIDE, BACK and THREE-QUARTER views in one row."
+3. **Mina, turnaround:** "A kind 5-year-old Muslim girl with warm light-brown skin, a pink hijab fully covering her hair, ears and neck, a long-sleeved ankle-length pink dress with a white trim, plum shoes, big friendly eyes, 3 heads tall. FRONT, SIDE, BACK and THREE-QUARTER views in one row."
+4. **Bubbles, turnaround:** "A cute round yellow octopus with orange spots, big shiny eyes, pink cheeks, eight short wavy tentacles, very friendly and silly. FRONT, SIDE, BACK and THREE-QUARTER views in one row."
 5. **Expression sheet (each character):** "<character description>, expression sheet, 8 head close-ups in a grid: happy, laughing, surprised, curious, thinking, sad, proud, sleepy."
 6. **Mouth sheet (each character):** "<character description>, lip-sync mouth chart, 8 close-up mouth shapes in a grid: rest, A/I, E, O, U, M/B/P, F/V, L/TH."
 
@@ -69,7 +69,7 @@ Use these with any image tool for **concept art only**. Free image tools cannot 
 2. **Turnaround sheet** (front, side, back, three-quarter) drawn or cleaned up to match → approve → save in `characters/<name>/sheet_v1.png` with the date. **Locked.**
 3. **3D model in Blender** built from the locked sheet → `characters/<name>/<name>_v1.blend`.
 4. **Rig** with Blender's free Rigify add-on, plus shape keys for the 10 mouth shapes and 8 expressions.
-5. **Action library:** idle, wave, dance-1, dance-2, clap, sing, eat, wash-hands, swim (Deeni), juggle (Bubbly), walk, sit → `animation/actions/`.
+5. **Action library:** idle, wave, dance-1, dance-2, clap, sing, eat, wash-hands, swim (Deeni), juggle (Bubbles), walk, sit → `animation/actions/`.
 6. **Episodes reference assets by name only** (e.g. `deeni_v1` + `dance-1`). Any design change = new version (`v2`), reviewed, and never mixed with v1 in the same episode.
 
 ### Honest note on Phase 3 cost

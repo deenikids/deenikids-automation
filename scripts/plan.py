@@ -21,20 +21,20 @@ EVENTS = {
 
 # weekday -> (series of Long-A, series of Long-B)
 WHEEL = {0: ("Dua & Routine Songs", "Allah Made It! (Preschool)"), 1: ("Arabic for Little Ones", "Values & Big Feelings"),
-         2: ("Islamic Basics & Surahs", "Deeni & Bubbly Adventures"), 3: ("Dua & Routine Songs", "Allah Made It! (Preschool)"),
-         4: ("Islamic Basics & Surahs", "Values & Big Feelings"), 5: ("Arabic for Little Ones", "Deeni & Bubbly Adventures"),
+         2: ("Islamic Basics & Surahs", "Deeni & Bubbles Adventures"), 3: ("Dua & Routine Songs", "Allah Made It! (Preschool)"),
+         4: ("Islamic Basics & Surahs", "Values & Big Feelings"), 5: ("Arabic for Little Ones", "Deeni & Bubbles Adventures"),
          6: ("Under the Sea with Deeni", "Bedtime Lullabies")}
 SERIES_HI = {"Dua & Routine Songs": "Duaon Ke Gaane", "Allah Made It! (Preschool)": "Allah Ne Banaya", "Arabic for Little Ones": "Chhoton Ki Arabic",
-             "Values & Big Feelings": "Achhi Aadatein", "Islamic Basics & Surahs": "Islam Ki Buniyaad", "Deeni & Bubbly Adventures": "Deeni Aur Bubbly Ki Sair",
+             "Values & Big Feelings": "Achhi Aadatein", "Islamic Basics & Surahs": "Islam Ki Buniyaad", "Deeni & Bubbles Adventures": "Deeni Aur Bubbles Ki Sair",
              "Under the Sea with Deeni": "Samundar Ke Dost", "Bedtime Lullabies": "Loriyan", "Ramadan with Deeni": "Deeni Ka Ramzan",
              "Hajj & Eid al-Adha": "Hajj Aur Bakra Eid", "Eid Specials": "Eid Special", "Shorts Originals": "Shorts"}
 THUMB_BRIEF = {
-    "Dua & Routine Songs": "Ayaan or Amira close-up, big happy smile, doing the action; bright yellow background; text top-left",
-    "Allah Made It! (Preschool)": "The object/animal BIG and clear, Bubbly pointing at it; background in that colour; text in the same colour, navy outline",
+    "Dua & Routine Songs": "Ali or Mina close-up, big happy smile, doing the action; bright yellow background; text top-left",
+    "Allah Made It! (Preschool)": "The object/animal BIG and clear, Bubbles pointing at it; background in that colour; text in the same colour, navy outline",
     "Arabic for Little Ones": "Giant 3D Arabic letter/number centre, Deeni pointing; single bright colour background",
     "Values & Big Feelings": "One clear feeling on one face (never distorted), one prop that tells the story; soft warm background",
-    "Islamic Basics & Surahs": "Amira with masjid/Quran/Kaaba icon (exterior only); calm green & gold palette",
-    "Deeni & Bubbly Adventures": "Deeni & Bubbly mid-action in the new place, wide shot, sunny colours",
+    "Islamic Basics & Surahs": "Mina with masjid/Quran/Kaaba icon (exterior only); calm green & gold palette",
+    "Deeni & Bubbles Adventures": "Deeni & Bubbles mid-action in the new place, wide shot, sunny colours",
     "Under the Sea with Deeni": "Deeni next to the sea creature, both big; turquoise water, bubbles",
     "Bedtime Lullabies": "Sleepy character under stars/moon, dark blue & soft gold, calm (no bright text)",
     "Ramadan with Deeni": "Crescent moon + lanterns, purple-night palette, 'Day N' badge",
@@ -42,12 +42,12 @@ THUMB_BRIEF = {
     "Eid Specials": "All 4 characters in Eid clothes, confetti, big 'Eid Mubarak!'",
 }
 HOOK = {
-    "Dua & Routine Songs": "Ayaan stops: \"Wait! What do we say before {x}?\" — chorus starts in 2 s",
-    "Allah Made It! (Preschool)": "Bubbly gasps: \"Look what Allah made!\" — {x} pops onto the screen",
+    "Dua & Routine Songs": "Ali stops: \"Wait! What do we say before {x}?\" — chorus starts in 2 s",
+    "Allah Made It! (Preschool)": "Bubbles gasps: \"Look what Allah made!\" — {x} pops onto the screen",
     "Arabic for Little Ones": "Deeni bursts out of a giant {x}: \"Say it with me!\"",
-    "Values & Big Feelings": "Amira's face changes: \"Uh-oh…\" — a tiny problem kids recognise ({x})",
-    "Islamic Basics & Surahs": "Amira waves: \"Do you know {x}? Let's learn together!\"",
-    "Deeni & Bubbly Adventures": "Splash! Deeni's bubble lands at the {x} — \"Adventure time!\"",
+    "Values & Big Feelings": "Mina's face changes: \"Uh-oh…\" — a tiny problem kids recognise ({x})",
+    "Islamic Basics & Surahs": "Mina waves: \"Do you know {x}? Let's learn together!\"",
+    "Deeni & Bubbles Adventures": "Splash! Deeni's bubble lands at the {x} — \"Adventure time!\"",
     "Under the Sea with Deeni": "Deeni swims up: \"Guess who lives under the sea… the {x}!\"",
     "Bedtime Lullabies": "Soft music, slow fade into a starry night: \"Shhh… time to sleep\"",
     "Ramadan with Deeni": "The crescent moon twinkles: \"Ramadan is here!\"",
@@ -120,7 +120,7 @@ def pick(series, c):
             f = BASICS_FORMATS[cyc % len(BASICS_FORMATS)]
             needs = "Auto; religious source must be in approved list"
         return dict(en=t[0], hi=t[1], te=t[2], th=t[3], lesson=t[4], src=t[5], fe=f[0], fh=f[1], needs=needs, x=t[0].split(":")[0])
-    if series == "Deeni & Bubbly Adventures":
+    if series == "Deeni & Bubbles Adventures":
         p = PLACES[n % len(PLACES)]
         v = VALUES[(7 * (n % len(PLACES)) + n // len(PLACES)) % len(VALUES)]
         return dict(en=f"{p[0]} Adventure: {v[0]}", hi=f"{p[1]} Ki Sair: {v[1]}", te=f"{p[0]}!", th=f"{p[1]}!", lesson=v[4], src=v[5],
@@ -185,13 +185,13 @@ def long_meta(series, it, slot, day, ep):
     src = it["src"]
     src_line = src if src.startswith(("No religious", "Arabic")) else src + VERIFY
     hook = HOOK.get(series, "").format(x=it.get("x") or it["en"])
-    en_desc = (f"{it['en']} 🎵 Sing along with Deeni, Ayaan, Amira and Bubbly!\n\n"
+    en_desc = (f"{it['en']} 🎵 Sing along with Deeni, Ali, Mina and Bubbles!\n\n"
                f"Today's lesson: {it['lesson']}.\n"
                f"📖 Source: {src}\n\n"
                f"✨ Sing, dance and do the actions together.\n👶 Made for little Muslims aged 1–6.\n"
                f"▶️ More from the series '{series}' in our playlist.\n\n"
                f"{BRAND}: Little Hearts, Big Imaan.\n#IslamicSongsForKids #MuslimKids #NurseryRhymes")
-    hi_desc = (f"{it['hi']} 🎵 Deeni, Ayaan, Amira aur Bubbly ke saath gaao!\n\n"
+    hi_desc = (f"{it['hi']} 🎵 Deeni, Ali, Mina aur Bubbles ke saath gaao!\n\n"
                f"Aaj ka sabaq: {it['hi']}.\n"
                f"📖 Source: {src}\n\n"
                f"✨ Saath mein gaao, naacho aur actions karo.\n👶 1–6 saal ke chhote Muslim bachon ke liye.\n"
@@ -217,7 +217,7 @@ def short_original(i, c):
         d = DUAS[n % len(DUAS)]
         s = SITUATIONS[(n // len(DUAS)) % len(SITUATIONS)]
         return ("What Do We Say? Quiz", f"What Do We Say? {d[0]} Quiz {s[0]}", f"Kya Bolte Hain? {d[1]} Quiz {s[1]}", "What do we say?", "Kya Bolein?",
-                d[4], d[5], "Bubbly freezes: \"Quick! What do we say?\" — 3-2-1 countdown")
+                d[4], d[5], "Bubbles freezes: \"Quick! What do we say?\" — 3-2-1 countdown")
     if kind == 2:
         num = n % 10 + 1
         o = COUNT_OBJECTS[(n // 10) % len(COUNT_OBJECTS)]
@@ -231,8 +231,8 @@ def short_original(i, c):
     if kind == 4:
         v = VALUES[n % len(VALUES)]
         p = PLACES[(n // len(VALUES)) % len(PLACES)]
-        return ("Bubbly's Funny Fail", f"Bubbly's Funny Fail: {v[0]} ({p[0]})", f"Bubbly Ki Galti: {v[1]} ({p[1]})", "Oops Bubbly!", "Oops Bubbly!",
-                v[4], v[5], "Bubbly slips — \"Oops!\" — can you help him?")
+        return ("Bubbles's Funny Fail", f"Bubbles's Funny Fail: {v[0]} ({p[0]})", f"Bubbles Ki Galti: {v[1]} ({p[1]})", "Oops Bubbles!", "Oops Bubbles!",
+                v[4], v[5], "Bubbles slips — \"Oops!\" — can you help him?")
     if kind == 5:
         l = LETTERS[n % len(LETTERS)]
         a = LETTER_ANGLES[(n // len(LETTERS)) % len(LETTER_ANGLES)]
@@ -340,7 +340,7 @@ def main(path):
         ["Long-B", "Second new song episode (~1.5–2 min), made automatically", "12:30 / 11:30"],
         ["Short-1", "New vertical sing-along built on Long-A's chorus", "08:00 / 09:00"],
         ["Short-2", "New vertical sing-along built on Long-B's chorus", "13:30 / 14:30"],
-        ["Short-3", "Original mini: Dua in 30 s · Quiz · Count · Colour Hunt · Bubbly's Funny Fail · Arabic Letter · Sunnah Minute", "20:30 / 21:30"],
+        ["Short-3", "Original mini: Dua in 30 s · Quiz · Count · Colour Hunt · Bubbles's Funny Fail · Arabic Letter · Sunnah Minute", "20:30 / 21:30"],
         [],
         ["WEEKLY WHEEL", "Long-A series", "Long-B series"],
     ] + [[["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"][k], WHEEL[k][0], WHEEL[k][1]] for k in range(7)] + [
