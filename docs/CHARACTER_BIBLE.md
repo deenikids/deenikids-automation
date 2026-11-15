@@ -1,5 +1,8 @@
 # DEENIKIDS Character Bible (v1.0)
 
+> **Status note (15 Nov 2026):** approved names are **Deeni, Ali, Mina, Bubbles** (formerly Ayaan, Amira, Bubbly). The channel is English only. The channel currently renders in a polished 2D cartoon style drawn by code (`scripts/characters2d.py`), because true 3D rendering is not possible on free servers at 5 videos a day. The colours and outfits below are what the 2D drawings use. Internal code keys still read `ayaan`, `amira`, `bubbly`; they never appear on screen.
+
+
 The **master character sheets are the source of truth**. Once a sheet is approved it is "locked" (v1). Episodes only ever *reuse* the locked model; they never generate a new-looking character. The 2D drawings in `scripts/characters2d.py` are placeholders that follow these specs until the Blender models exist.
 
 Proportions use **head units (H)**: the height of the character's head.

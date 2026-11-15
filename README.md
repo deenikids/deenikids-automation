@@ -1,10 +1,10 @@
 # Deeni & Friends: Fully Automatic, 100% Free
 
-**Every day GitHub Actions makes, checks and uploads 2 new episodes + 3 new Shorts, in English and Hinglish (10 uploads), with nobody touching anything.**
+**Every day GitHub Actions makes, checks and uploads 2 new episodes + 3 new Shorts, in English (5 uploads), with nobody touching anything.**
 Workflow: `.github/workflows/daily.yml` runs at 00:05 IST. Plan: `scripts/plan.py` (1,000 days, 5,000 unique topics).
 
 ```
-plan.py (today's 5 topics) -> auto_song.py (original lyrics EN+Hinglish, new melody, storyboard)
+plan.py (today's 5 topics) -> auto_song.py (original English lyrics, new melody, storyboard)
  -> generate_music.py -> generate_voice.py (free Kokoro AI voice) -> render_animatic.py (2D video + Shorts)
  -> generate_thumbnail.py -> quality_check.py -> source check -> upload_youtube.py (Made for Kids) -> ledger
 ```
@@ -50,7 +50,7 @@ song.json + storyboard.json
 | Part | Status |
 |---|---|
 | Original music for "Bismillah Before We Begin" (77 s, 108 BPM) | ✅ tested |
-| English + Hindi/Urdu episode videos (1920x1080, 24 fps) | ✅ tested |
+| English episode videos (1920x1080, 24 fps) | ✅ tested |
 | 3 Shorts per language (chorus, "What do we say?", meet Deeni) | ✅ tested |
 | Thumbnails (EN + HI) | ✅ tested |
 | Automatic QC (and it correctly fails broken files) | ✅ tested |
@@ -84,7 +84,6 @@ The videos are a **2D animatic**: real timing, scenes, subtitles and music, with
 
 ### Step 4: Human review (required before any upload)
 1. Ask an alim or qualified teacher to check the lyrics and sources in `content/songs/bismillah-before-we-begin/song.json` (open it on GitHub to read).
-2. Ask a native Hindi/Urdu speaker to check the `hi` lines.
 3. Decide on the proposed outro lyric change (listed under `lyric_changes`).
 4. Edit `song.json` on GitHub (pencil icon) and set each review item to `"status": "approved"`, with `"reviewer"` and `"date"` filled in > Commit.
 
@@ -112,7 +111,7 @@ Videos uploaded through a new Google Cloud project are forced to Private until t
 ### Step 7: Add real singing (recommended)
 1. From the build's artifacts, download `audio/singer_guide.wav` (the melody plus a click track).
 2. A singer listens on headphones and records the song **from 0:00**, in a quiet room, on a phone or USB mic. Clean it up in Audacity (free) and export as WAV.
-3. Upload it to GitHub as `audio/vocals/bismillah-before-we-begin/en.wav`, and the Hindi/Urdu version as `hi.wav`.
+3. Upload it to GitHub as `audio/vocals/bismillah-before-we-begin/en.wav`.
 4. Run **Build episode** again. The pipeline uses the human vocals automatically.
 
 ---

@@ -1,7 +1,7 @@
 name: Daily automatic publishing
 
 # Runs by itself every day at 00:05 IST (18:35 UTC the day before).
-# Makes today's 2 episodes + 3 Shorts in English and Hinglish, checks them and uploads them.
+# Makes today's 2 episodes + 3 Shorts in English, checks them and uploads them.
 on:
   schedule:
     - cron: "35 18 * * *"
