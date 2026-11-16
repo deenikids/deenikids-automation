@@ -27,7 +27,7 @@ def face(head, y0=.78, z=.62, wide=.33, hood=False):
         part("s", "pu", (y0 + .16, s * wide, z), (.1, .09, .16), D, head)
         part("s", "sh", (y0 + .24, s * (wide - .03), z + .08), (.035, .035, .05), W, head)
         part("s", "ch", (y0 + .02, s * .56, z - .24), (.1, .05, .08), PINK, head)
-    part("s", "mo", (y0 + .08, 0, z - .32), (.1, .15, .045), MOUTH, head)
+    part("s", "mo", (y0 + .08, 0, z - .32), (.12, .2, .07), MOUTH, head)
 def child(x, skin_rgb, outfit, trouser, shoe, hijab=None, taqiyah=False, dress=False):
     root = pivot("c", (0, x, 0)); skin = mat("sk", skin_rgb, .5, .15); out = mat("o", outfit, .6)
     part("s", "torso", (0, 0, 1.55), (.62, .5, .82), out, root)
@@ -75,5 +75,8 @@ for loc, e, sz in (((6, -6, 9), 700, 8), ((8, 7, 4), 220, 6)):
 w = bpy.data.worlds.new("w"); sc.world = w; w.use_nodes = True; bg = w.node_tree.nodes["Background"]; bg.inputs[0].default_value = (.75, .88, 1, 1)
 bpy.ops.object.camera_add(location=(22, .4, 2.6), rotation=(math.radians(88), 0, math.radians(90))); sc.camera = bpy.context.object; sc.camera.data.lens = 38
 sc.view_settings.view_transform = "Standard"; sc.render.engine = "CYCLES"; sc.cycles.samples = int(sys.argv[-2]); sc.cycles.use_denoising = True
+sc.render.use_freestyle = True; vl = sc.view_layers[0]; vl.use_freestyle = True
+ls = vl.freestyle_settings.linesets.new("outline"); ls.select_silhouette = True; ls.select_border = True; ls.select_crease = True
+ls.linestyle.thickness = 3.0; ls.linestyle.color = (.12, .06, .1)
 sc.render.resolution_x, sc.render.resolution_y = 1280, 720; sc.render.filepath = sys.argv[-1]
 bpy.ops.render.render(write_still=True)
