@@ -146,6 +146,16 @@ def camk(f, loc, look):
 camk(1, (16, -3, 3.4), (0, -3.5, 2.2)); camk(72, (16, -2, 3.4), (0, -3, 2.2)); camk(132, (16, 0, 3.5), (0, 0, 2.2)); camk(168, (15, 2, 3.4), (0, 3, 2.2)); camk(190, (14, 0, 3.6), (0, 0, 2.3)); camk(288, (10.5, 0, 3.2), (0, 0, 2.5))
 
 sc.render.engine = "CYCLES"; sc.cycles.use_denoising = True; sc.cycles.samples = 16
+import os
+if os.environ.get("DEENI_GPU") == "1":  # free GPU (e.g. Kaggle T4): CUDA/OptiX
+    cp = bpy.context.preferences.addons["cycles"].preferences
+    for typ in ("OPTIX", "CUDA"):
+        try:
+            cp.compute_device_type = typ; cp.get_devices()
+            if any(d.type == typ for d in cp.devices): break
+        except Exception: pass
+    for d in cp.devices: d.use = d.type != "CPU"
+    sc.cycles.device = "GPU"; sc.cycles.samples = int(os.environ.get("DEENI_SAMPLES", "16")); print("GPU devices:", [(d.name, d.type, d.use) for d in cp.devices], flush=True)
 sc.render.resolution_x, sc.render.resolution_y = 640, 360
 sc.render.use_freestyle = True; vl = sc.view_layers[0]; vl.use_freestyle = True
 coll = bpy.data.collections.new("chars"); sc.collection.children.link(coll)

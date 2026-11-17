@@ -1,0 +1,22 @@
+name: gpu-render-test
+on: workflow_dispatch
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install kaggle
+      - name: Push and run Kaggle GPU render test
+        env:
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+        run: |
+          mkdir k && cp kaggle/render_kernel.py k/
+          echo "{\"id\":\"$KAGGLE_USERNAME/deeni-render-test\",\"title\":\"deeni-render-test\",\"code_file\":\"render_kernel.py\",\"language\":\"python\",\"kernel_type\":\"script\",\"is_private\":true,\"enable_gpu\":true,\"enable_internet\":true,\"dataset_sources\":[],\"competition_sources\":[],\"kernel_sources\":[]}" > k/kernel-metadata.json
+          kaggle kernels push -p k
+          for i in $(seq 1 50); do sleep 60; s=$(kaggle kernels status $KAGGLE_USERNAME/deeni-render-test 2>&1); echo "$s"; echo "$s" | grep -qi -E "complete|error|cancel" && break; done
+          mkdir out; timeout 300 kaggle kernels output $KAGGLE_USERNAME/deeni-render-test -p out || true
+          ls out | head; cat out/*.log 2>/dev/null | tail -40
