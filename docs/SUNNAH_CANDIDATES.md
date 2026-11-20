@@ -49,4 +49,40 @@
 | 43 | Shake hands when you meet | Riyad as-Salihin 887–888 (Abu Dawud; Tirmidhi) |
 | 44 | Be kind and gentle to children | Riyad as-Salihin 893 (Bukhari and Muslim) |
 
-(44 distinct lessons so far. Books 6 onward and other collections are not read yet.)
+| 45 | Visit someone who is sick | Riyad as-Salihin 897-898 (Bukhari; Muslim) |
+| 46 | Put your hand where it hurts, say Bismillah, ask Allah for protection | Riyad as-Salihin 905 (Muslim) |
+| 47 | Start the day early | Riyad as-Salihin 957 (Tirmidhi and Abu Dawud) |
+| 48 | Be kind to animals | Riyad as-Salihin 967 (Muslim) |
+| 49 | Share what you have extra with someone who has none | Riyad as-Salihin 969 (Muslim) |
+| 50 | Say Allahu Akbar and make a dua when you get on a ride | Riyad as-Salihin 972 (Muslim) |
+| 51 | Say Bismillah before getting on a ride | Riyad as-Salihin 974 (Abu Dawud and Tirmidhi) |
+| 52 | Say Allahu Akbar going up, Subhan Allah going down | Riyad as-Salihin 975 (Bukhari) |
+| 53 | Say a short dua for protection when you stop somewhere | Riyad as-Salihin 982 (Muslim) |
+| 54 | Go home to your family without delay when your trip is done | Riyad as-Salihin 984 (Bukhari and Muslim) |
+| 55 | Repeat what the muadhin says when you hear the adhan | Riyad as-Salihin 1038 (Bukhari and Muslim) |
+| 56 | Do wudu carefully | Riyad as-Salihin 1026 (Muslim) |
+| 57 | Cleanliness is half of faith | Riyad as-Salihin 1031 (Muslim) |
+| 58 | Walk to the masjid | Riyad as-Salihin 1054 (Muslim) |
+| 59 | Stand in straight, neat rows for prayer | Riyad as-Salihin 1082 (Muslim) |
+| 60 | Pray on time | Riyad as-Salihin 1074 (Bukhari and Muslim) |
+| 61 | Learn the Quran and teach it (needs scholar check for age use) | Riyad as-Salihin 993 (Bukhari) |
+| 62 | Ayat al-Kursi before bed (recitation: needs scholar check) | Riyad as-Salihin 1020 (Bukhari) |
+| 63 | Share what you learn with others | Riyad as-Salihin 1380 (Bukhari) |
+| 64 | Invite others to do good | Riyad as-Salihin 1382 (Muslim) |
+| 65 | Pray for your parents | Riyad as-Salihin 1383 (Muslim) |
+| 66 | Say Subhan Allahi wa bihamdihi | Riyad as-Salihin 1412 (Muslim) |
+| 67 | Say La ilaha illallah | Riyad as-Salihin 1437 (Tirmidhi) |
+| 68 | Say La hawla wa la quwwata illa billah | Riyad as-Salihin 1443 (Bukhari and Muslim) |
+| 69 | Say a dua when going to bed and when waking up | Riyad as-Salihin 1446 (Bukhari) |
+| 70 | Say Bismillah morning and evening | Riyad as-Salihin 1457 (Abu Dawud and Tirmidhi) |
+| 71 | Shake out your bed before lying down | Riyad as-Salihin 1460 (Bukhari and Muslim) |
+| 72 | Blow on your hands and say the protective surahs before sleep (recitation: needs scholar check) | Riyad as-Salihin 1461 (Bukhari and Muslim) |
+| 73 | Thank Allah for food, drink and a home at bedtime | Riyad as-Salihin 1463 (Muslim) |
+| 74 | Put your right hand under your cheek to sleep | Riyad as-Salihin 1464 (Tirmidhi) |
+| 75 | Ask Allah for forgiveness after prayer | Riyad as-Salihin 1415 (Muslim) |
+| 76 | Pray for a friend who is not there | Riyad as-Salihin 1494 (Muslim) |
+| 77 | Thank someone by praying for them | Riyad as-Salihin 1496 (Tirmidhi) |
+| 78 | Do not curse your children or yourself | Riyad as-Salihin 1497 (Muslim) |
+| 79 | Keep asking Allah; do not give up | Riyad as-Salihin 1499 (Bukhari and Muslim) |
+
+(79 distinct lessons so far, from Riyad as-Salihin books 1-8 (book 8 only the first half of its page), 12, 15 and 16. Books 9-11, 13-14 and 17-19, the second half of book 8, other collections (Adab al-Mufrad, etc.) and the remaining pages are not read yet. Lines marked "needs scholar check" involve Quran recitation, which we avoid having an AI voice do.)
