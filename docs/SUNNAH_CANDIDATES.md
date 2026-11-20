@@ -121,4 +121,34 @@
 | 113 | Send salawat on the Prophet (peace be upon him) | Riyad as-Salihin 1397 (Muslim) |
 | 114 | Send extra salawat on Friday | Riyad as-Salihin 1399 (Abu Dawud) |
 
-(114 distinct lessons so far. Read: Riyad as-Salihin books 1-8 (book 8 up to about 200,000 of 206,000 characters), 12-18 (books 17 and 18 only partly: the page extraction stopped early), 13, 14. NOT read: books 9-11 and 19, the rest of books 17 and 18, other collections. The Adab al-Mufrad page could not be fetched. Lines marked "needs scholar check" involve Quran recitation. All lines are AI extractions awaiting a person's check.)
+| 115 | If you sit by the road, lower your gaze, do not bother people, return greetings | Riyad as-Salihin 1623-1624 (Bukhari and Muslim; Muslim) |
+| 116 | Do not eat or drink with the left hand | Riyad as-Salihin 1634-1635 (Muslim) |
+| 117 | Do not walk with only one shoe on | Riyad as-Salihin 1649 (Bukhari and Muslim) |
+| 118 | Fix a broken shoelace before walking on | Riyad as-Salihin 1650 (Muslim) |
+| 119 | Cover food and drink, close doors, put out lamps before sleeping | Riyad as-Salihin 1652-1654 (Bukhari and Muslim; Muslim) |
+| 120 | Keep the masjid clean | Riyad as-Salihin 1693-1695 (Bukhari and Muslim; Muslim) |
+| 121 | Keep your voice low in the masjid | Riyad as-Salihin 1700 (Bukhari) |
+| 122 | Say "Allah knows best" when you do not know | Riyad as-Salihin 1656 (Bukhari) |
+| 123 | Help people who ask, accept invitations, repay kindness | Riyad as-Salihin 1723 (Abu Dawud and Nasai) |
+| 124 | Do not show off in the way you talk | Riyad as-Salihin 1737 (Abu Dawud and Tirmidhi) |
+| 125 | Good manners bring you closest to the Prophet | Riyad as-Salihin 1738 (Tirmidhi) |
+| 126 | Be fair to all your children when giving gifts | Riyad as-Salihin 1773 (Bukhari and Muslim) |
+| 127 | Accept a kind gift gracefully | Riyad as-Salihin 1786-1787 (Muslim; Bukhari) |
+| 128 | Do not over-praise someone to their face | Riyad as-Salihin 1788 (Bukhari and Muslim) |
+| 129 | Do not claim a father who is not your father; respect your parents | Riyad as-Salihin 1802-1803 (Bukhari and Muslim) |
+| 130 | Say Astaghfirullah many times a day | Riyad as-Salihin 1869-1870 (Muslim; Bukhari) |
+| 131 | Allah loves those who say sorry and turn back to Him | Riyad as-Salihin 1871, 1878 (Muslim; Tirmidhi) |
+| 132 | After prayer, say Astaghfirullah three times | Riyad as-Salihin 1876 (Muslim) |
+| 133 | Say Subhan Allah and Alhamdulillah, then ask forgiveness | Riyad as-Salihin 1877 (Bukhari and Muslim) |
+| 134 | Pray on time, then be kind to your parents | Al-Adab Al-Mufrad 1 (graded Sahih on the page) |
+| 135 | Be kind to your mother first, then your father | Al-Adab Al-Mufrad 3, 5, 6 (graded Hasan / Sahih on the page) |
+| 136 | Speak gently to your mother and feed her | Al-Adab Al-Mufrad 8 (graded Sahih on the page) |
+| 137 | If you upset your parents, go back and make them smile | Al-Adab Al-Mufrad 13, 19 (graded Sahih on the page) |
+| 138 | Greet your mother warmly when you come in | Al-Adab Al-Mufrad 14 (graded Hasan on the page) |
+| 139 | Obey your parents | Al-Adab Al-Mufrad 18 (graded Hasan on the page) |
+| 140 | Never insult your parents | Al-Adab Al-Mufrad 27 (graded Sahih on the page) |
+| 141 | Pray for your parents | Al-Adab Al-Mufrad 37 (graded Sahih on the page) |
+| 142 | Be kind to the friends your father loved | Al-Adab Al-Mufrad 41 (graded Sahih on the page) |
+| 143 | Do not call your father by his name, walk ahead of him, or sit before him | Al-Adab Al-Mufrad 44 (graded Sahih on the page) |
+
+(143 distinct lessons so far. Read: Riyad as-Salihin books 1-8, 12-19 (books 17 up to about 200,000 of 246,000 characters; pages are read through an AI extractor that shows only part of each book), 13, 14; Al-Adab Al-Mufrad book 1 only (parents). NOT read: Riyad as-Salihin books 9-11 (I'tikaf, Hajj, Jihad; not suited to preschool), the last part of book 17, Adab al-Mufrad books 2 onward (neighbours, orphans, children, etc.), Shamail (page did not open), Bukhari, Muslim and other collections. The Nawawi 40 page showed full text for only one hadith, so none from it are listed. All lines are AI extractions awaiting a person's check.)
