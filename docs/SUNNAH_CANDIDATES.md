@@ -85,4 +85,40 @@
 | 78 | Do not curse your children or yourself | Riyad as-Salihin 1497 (Muslim) |
 | 79 | Keep asking Allah; do not give up | Riyad as-Salihin 1499 (Bukhari and Muslim) |
 
-(79 distinct lessons so far, from Riyad as-Salihin books 1-8 (book 8 only the first half of its page), 12, 15 and 16. Books 9-11, 13-14 and 17-19, the second half of book 8, other collections (Adab al-Mufrad, etc.) and the remaining pages are not read yet. Lines marked "needs scholar check" involve Quran recitation, which we avoid having an AI voice do.)
+| 80 | Every good word is charity (say Alhamdulillah, Allahu Akbar, speak kindly) | Riyad as-Salihin 1140 (Muslim) |
+| 81 | Remember Allah when you wake up | Riyad as-Salihin 1165 (Bukhari and Muslim) |
+| 82 | Use the miswak (brush your teeth) | Riyad as-Salihin 1196-1197, 1200, 1202 (Bukhari and Muslim; Muslim; Nasai) |
+| 83 | Eat suhur (the pre-dawn meal) for blessing, in Ramadan | Riyad as-Salihin 1229 (Bukhari and Muslim) |
+| 84 | When fasting, avoid rude words and say you are fasting | Riyad as-Salihin 1240 (Bukhari and Muslim) |
+| 85 | Fasting also means giving up lying | Riyad as-Salihin 1241 (Bukhari) |
+| 86 | Be honest, even in buying and selling | Riyad as-Salihin 1826 (Bukhari and Muslim) |
+| 87 | Share spare water with a traveller | Riyad as-Salihin 1835 (Bukhari and Muslim) |
+| 88 | Make peace within three days after a quarrel | Riyad as-Salihin 1859 (Bukhari) |
+| 89 | Love the masjid | Riyad as-Salihin 1841 (Muslim) |
+| 90 | Be the best: keep others safe from your words and hands | Riyad as-Salihin 1512 (Bukhari and Muslim) |
+| 91 | Think before you speak | Riyad as-Salihin 1514 (Bukhari and Muslim) |
+| 92 | Do not talk about a friend behind his back | Riyad as-Salihin 1523 (Muslim) |
+| 93 | Do not mock how people look | Riyad as-Salihin 1525 (Abu Dawud and Tirmidhi) |
+| 94 | Defend a friend when others speak badly of him | Riyad as-Salihin 1528 (Tirmidhi) |
+| 95 | Do not carry tales that cause trouble | Riyad as-Salihin 1536 (Bukhari and Muslim) |
+| 96 | Check before repeating what you hear | Riyad as-Salihin 1547 (Muslim) |
+| 97 | Do not pretend to have what you do not have | Riyad as-Salihin 1549 (Bukhari and Muslim) |
+| 98 | Do not curse or insult others | Riyad as-Salihin 1554-1555, 1559 (Abu Dawud and Tirmidhi; Tirmidhi; Bukhari and Muslim) |
+| 99 | Do not curse animals | Riyad as-Salihin 1557 (Muslim) |
+| 100 | Treat others the way you want to be treated | Riyad as-Salihin 1566 (Muslim) |
+| 101 | Do not hate or envy each other; be like brothers | Riyad as-Salihin 1567 (Bukhari and Muslim) |
+| 102 | Let go of grudges | Riyad as-Salihin 1568 (Muslim) |
+| 103 | Do not look down on others | Riyad as-Salihin 1574 (Muslim) |
+| 104 | Do not be happy when a friend has bad luck | Riyad as-Salihin 1577 (Tirmidhi) |
+| 105 | Be humble; do not boast | Riyad as-Salihin 1589 (Muslim) |
+| 106 | After a disagreement, be the first to greet | Riyad as-Salihin 1592, 1597 (Bukhari and Muslim; Abu Dawud) |
+| 107 | Do not whisper secrets so a third person feels left out | Riyad as-Salihin 1598 (Bukhari and Muslim) |
+| 108 | Feed animals and give them water | Riyad as-Salihin 1600 (Bukhari and Muslim) |
+| 109 | Do not harm birds or ant homes | Riyad as-Salihin 1610 (Abu Dawud) |
+| 110 | Do not take back a gift you gave | Riyad as-Salihin 1612 (Bukhari and Muslim) |
+| 111 | Say Alhamdulillah after each bite or sip | Riyad as-Salihin 1396 (Muslim) |
+| 112 | Begin important things with praise of Allah | Riyad as-Salihin 1394 (Abu Dawud) |
+| 113 | Send salawat on the Prophet (peace be upon him) | Riyad as-Salihin 1397 (Muslim) |
+| 114 | Send extra salawat on Friday | Riyad as-Salihin 1399 (Abu Dawud) |
+
+(114 distinct lessons so far. Read: Riyad as-Salihin books 1-8 (book 8 up to about 200,000 of 206,000 characters), 12-18 (books 17 and 18 only partly: the page extraction stopped early), 13, 14. NOT read: books 9-11 and 19, the rest of books 17 and 18, other collections. The Adab al-Mufrad page could not be fetched. Lines marked "needs scholar check" involve Quran recitation. All lines are AI extractions awaiting a person's check.)
